@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "eurocad")(type "Legacy")(uri "/home/grm/Desktop/SynthLab/Electronics/eurocad/eurocad.lib")(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "eurocad")(type "KiCad")(uri "/home/grm/Desktop/SynthLab/Electronics/eurocad/Eurocad.pretty")(options "")(descr ""))
+)
