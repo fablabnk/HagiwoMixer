@@ -3,6 +3,7 @@ The repo contains the KiCad files for manufacturing the printed circuit board an
 
 # Still to pay attention to! (A.K.A. the TODO list) 
 
+- PROBLEM: it's the main board not the panel that needs to be mirrored - how to do this? See [here](https://www.reddit.com/r/KiCad/comments/sazql5/is_there_a_mirror_tool_for_flipping_the_pcb_layout/)
 - do the connections on my pots go downwards onto the board?
 - the thonkiconn screws should also how 
 - component heights should be such that they all poke through the front panel at the same height (check with 3D model)
