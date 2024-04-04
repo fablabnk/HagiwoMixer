@@ -211,3 +211,7 @@ Key points:
 # 8. Send to manufacturer (TODO)
 
 To be decided...
+
+
+## Links
+https://www.ti.com/product/TL072#design-development  
