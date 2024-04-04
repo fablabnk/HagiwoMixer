@@ -204,8 +204,7 @@ Key points:
 - Go to `File Menu -> Plot` to start the export process for each board
     - Click `Generate Drill Files` - this should create a set of .drl files
     - Then click `Plot` - this should create a .gbr file for each KiCad layer
-- Both the drill and Gerber files can (and should!) be checked in a Gerber viewer to ensure they are correct. I used `gerbv` i.e.
-    - `sudo apt install gerbv`
+- Both the drill and Gerber files can (and should!) be checked in KiCad's inbuilt Gerber viewer. Just double click on the new project files that have appeared
 - You may need to copy out the first set of .gbr and .drl files before producing the second.
 
 # 8. Send to manufacturer (TODO)
