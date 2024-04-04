@@ -20,11 +20,11 @@ For this design I am aiming to:
 
 # Components / Bill of Materials (BOM)
 
-- 4 x 10K potentiometers Alpha 9mm (inputs)
-- 1 x 100K potentiometer Alpha 9mm (output)
-- 6 x [Thonkiconn 3.5mm jack sockets](https://www.thonk.co.uk/shop/thonkiconn/)
-- 1 x TL072 dual op-amp (integrated circuit in PDIP package)
-- 1 x 2x5 Pin Shrouded Header (Eurorack power connector)
+- 4 x [10K potentiometers Alpha 9mm (inputs)](https://www.musikding.de/Alpha-Pot-9mm-10k-lin-dual-concentric)  
+- 1 x [100K potentiometer Alpha 9mm (output)](https://www.musikding.de/Alpha-Pot-9mm-100k-lin-dual-concentric)
+- 6 x [Thonkiconn 3.5mm jack sockets](https://www.thonk.co.uk/shop/thonkiconn/)  
+- 1 x [TL072 dual op-amp (integrated circuit in PDIP package)](https://www.ti.com/product/TL072#design-development)  
+- 1 x [2x5 Pin Shrouded Header (Eurorack power connector)](https://oddvolt.com/products/shrouded-10pin-eurorack-power-header)  
 - 5 x 100K resistors
 - 1 x 22K resistor
 - 1 x 4.7K resistor
