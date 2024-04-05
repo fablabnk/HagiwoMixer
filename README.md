@@ -214,4 +214,7 @@ To be decided...
 
 
 ## Links
+TL072 sheet:  
 https://www.ti.com/product/TL072#design-development  
+Nice video explaining op amps configurations:  
+https://youtu.be/_HHxV-7alwE?si=UBo3YyZvg435RTeY  
