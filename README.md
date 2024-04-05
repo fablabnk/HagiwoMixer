@@ -29,7 +29,7 @@ For this design I am aiming to:
 - 1 x 22K resistor
 - 1 x 4.7K resistor
 - 1 x 1K resistor
-- 2 x 4.7uF electrolytic capacitors
+- 2 x 4.7uF electrolytic capacitors (block out high-frequency AC noise or ripple that might be present on the DC power supply line.)
 
 # Workflow
 
@@ -218,3 +218,5 @@ TL072 sheet:
 https://www.ti.com/product/TL072#design-development  
 Nice video explaining op amps configurations:  
 https://youtu.be/_HHxV-7alwE?si=UBo3YyZvg435RTeY  
+and the blog post with schematics and explanation about op amps:  
+https://dronebotworkshop.com/op-amps/  
