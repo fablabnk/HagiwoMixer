@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 47,
+    "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -73,7 +73,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "HagiwoEurorackMixer.kicad_prl",
+    "filename": "HagiwoEurorackMixer_PanelOnly.kicad_prl",
     "version": 3
   },
   "project": {

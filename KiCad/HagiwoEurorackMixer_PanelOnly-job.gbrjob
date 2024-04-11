@@ -5,16 +5,16 @@
       "Application": "Pcbnew",
       "Version": "8.0.1-8.0.1-1~ubuntu22.04.1"
     },
-    "CreationDate": "2024-04-08T16:27:00+02:00"
+    "CreationDate": "2024-04-11T11:05:16+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "HagiwoEurorackMixer",
+      "Name": "HagiwoEurorackMixer_PanelOnly",
       "GUID": "48616769-776f-4457-9572-6f7261636b4d",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 67.93,
+      "X": 30.05,
       "Y": 128.55
     },
     "LayerNumber": 2,
@@ -26,39 +26,48 @@
       "Layers": "Outer",
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
-      "TrackToTrack": 0.2,
-      "MinLineWidth": 0.25
+      "TrackToTrack": 0.2
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "HagiwoEurorackMixer-F_Cu.gbr",
+      "Path": "HagiwoEurorackMixer_PanelOnly-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "HagiwoEurorackMixer-B_Cu.gbr",
+      "Path": "HagiwoEurorackMixer_PanelOnly-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "HagiwoEurorackMixer-F_Silkscreen.gbr",
+      "Path": "HagiwoEurorackMixer_PanelOnly-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "HagiwoEurorackMixer-F_Mask.gbr",
+      "Path": "HagiwoEurorackMixer_PanelOnly-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "HagiwoEurorackMixer-B_Mask.gbr",
+      "Path": "HagiwoEurorackMixer_PanelOnly-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "HagiwoEurorackMixer-Edge_Cuts.gbr",
+      "Path": "HagiwoEurorackMixer_PanelOnly-User_Drawings.gbr",
+      "FileFunction": "Other,User",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "HagiwoEurorackMixer_PanelOnly-Edge_Cuts.gbr",
       "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "HagiwoEurorackMixer_PanelOnly-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
       "FilePolarity": "Positive"
     }
   ],
