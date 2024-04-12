@@ -1,14 +1,6 @@
 
 The repo contains the KiCad files for manufacturing the printed circuit board and front panel for a 4-channel Eurorack active mixer, based on the one Hagiwo assembled by hand [here](https://note.com/solder_state/n/nffc1a33053be). This project is a simpler precursor to building a Eurorack module with a Daisy Seed, in order to hone my skills and go one-time through the PCB manufacture process.
 
-# Still to pay attention to! (A.K.A. the TODO list) 
-
-- PROBLEM: it's the main board not the panel that needs to be mirrored - how to do this? See [here](https://www.reddit.com/r/KiCad/comments/sazql5/is_there_a_mirror_tool_for_flipping_the_pcb_layout/)
-- do the connections on my pots go downwards onto the board?
-- the thonkiconn screws should also how 
-- component heights should be such that they all poke through the front panel at the same height (check with 3D model)
-- Note: our screw holes on the panel template are not perfectly placed! complete the mounting holes section in the table below
-
 # Aims / Design Constraints
 
 For this design I am aiming to:
@@ -41,7 +33,8 @@ For this design I am aiming to:
 5. [Route traces](#5-route-traces)
 6. [Design the front panel](#6-design-the-front-panel)
 7. [Produce gerber files](#7-produce-gerber-files)
-8. [Send to manufacturer (TODO)](#8-send-to-manufacturer-todo)
+8. [Do a test laser cut (or paper print)](#8-do-a-test-laser-cut-or-paper-print)
+9. [Send to manufacturer](#9-send-to-manufacturer)
 
 # 1. Design the schematic
 
@@ -130,13 +123,23 @@ I started by defining three templates, using the original [Doepfer specification
 
 In KiCad, rectangles are specified using x and y start and end points. Here are points for all the elements mentioned above:
 
-| Item                | X Start    | X End       | Y Start   | Y End       |
-|---------------------|------------|-------------|-----------|-------------|
-| Front Panel Template| 0          | 30.48       | 0         | 128.5       |
-| Front Panel         | 0.24       | 30.24       | 0         | 128.5       |
-#| Mounting Hole 1     | 5.08 - 2.6 | 5.08 + 2.6  | 3.2 - 1.5 | 3.2 + 1.5   |
-#| Mounting Hole 2     | 5.08 - 2.6 | 5.08 + 2.6  | 3.2 - 1.5 | 3.2 + 1.5   |
-| Main Board          | 0.74       | 29.74       | 11.25     | 117.25      |
+| Item                | X Start      | X End         | Y Start      | Y End         |
+|---------------------|--------------|---------------|--------------|---------------|
+| Front Panel Template| 0            | 30.48         | 0            | 128.5         |
+| Front Panel         | 0.24         | 30.24         | 0            | 128.5         |
+| Mounting Hole 1     | 5.08 - 2.6    | 5.08 + 2.6    | 3 - 1.6      | 3 + 1.6       |
+| Mounting Hole 2     | 30 - 5.08 - 2.6 | 30 - 5.08 + 2.6  | 128.5 - 3 - 1.6 | 128.5 - 3 + 1.6 |
+| Main Board          | 0.74         | 29.74         | 11.25        | 117.25        |
+
+
+Note on mounting holes:
+    - my mounting holes are oval and 5.2mm wide and 3.2mm tall
+    - for hole 1, we go from the top left (0, 0) and then
+        - move one HP to the right on the X axis, then add/subract half of the oval width
+        - move one 3mm down on the Y axis (Doepfer standard), then add/subract half of the oval height
+    - from hole 2, we go from the bottom right (30, 128.5) and then
+        - move one HP to the left on the X axis, then add/subract half of the oval width
+        - move one 3mm up on the Y axis (Doepfer standard), then add/subract half of the oval height
 
 Once all three templates were complete, I grouped them all together to ensure they are not accidentally moved out of position relative to one another. It is also possible to snap different elements within the design to grid points, to aid relative placement of components.
 
@@ -155,7 +158,7 @@ Before the components can be laid out on the PCB, a footprint for each must be g
 
 ## Placing Components
 
-There are tools available purely for doing front panel design, such as [Front Panel Designer](https://www.frontpanelexpress.com/front-panel-designer) and [Synth Panels Designer](https://cdm.link/2020/07/synth-panels-designer-makes-diy-panels-free/). These could help to define the ideal component placement in future,but this time round I just placed by hand using the main board height as the core constraint.
+There are tools available purely for doing front panel design, such as [Front Panel Designer](https://www.frontpanelexpress.com/front-panel-designer) and [Synth Panels Designer](https://cdm.link/2020/07/synth-panels-designer-makes-diy-panels-free/). These could help to define the ideal component placement in future, but this time round I just placed by hand using the main board height as the core constraint.
 
 Key points:
 - Placement was done within the bounds of the main board template
@@ -181,7 +184,7 @@ Key points:
 
 # 6. Design the front panel
 
-Designing the front panel was a simple matter of:
+Designing the front panel was a relatively simple matter of:
 1. Creating mounting holes whose centre points match those of the circles on the jack and pot footprints
 2. Moving the panel template, plus mounting holes to one side (still on the grid)
 3. Adding text, row markers and logos as drawings to the silkscreen layer
@@ -199,19 +202,65 @@ Key points:
 
 # 7. Produce Gerber files
 
-Once all the above has been done, we can temporarily delete the front panel elements to produce the PCB Gerber files and vice versa.
+Once all the above has been done, we can use the `File -> Save a Copy` option in the PCB Editor to make PCB Only and Panel Only versions of our project and then delete the elements we don't need. We need to do this so the files can be read properly as separate projects by the manufacturing house.
 
 Key points:
 - Go to `File Menu -> Plot` to start the export process for each board
     - Click `Generate Drill Files` - this should create a set of .drl files
-    - Then click `Plot` - this should create a .gbr file for each KiCad layer
-- Both the drill and Gerber files can (and should!) be checked in KiCad's inbuilt Gerber viewer. Just double click on the new project files that have appeared
-- You may need to copy out the first set of .gbr and .drl files before producing the second.
+    - Also Click `Generate Map File` - this helps for laser cutting/paper printing a template (see below)
+    - Then click `Plot` - this should create a .gbr file for each KiCad layer    
+- Both the drill and Gerber files should be checked in KiCad's inbuilt Gerber viewer
+    - the .gbrjob file contains all the layers in one file, so is easier to quickly check (though the individual files are what will actually be sent)
+    - don't forget to check the .drl (drill) files as well as these are not included in the .gbrjob file
 
-# 8. Send to manufacturer (TODO)
+# 8. Do a test laser cut (or paper print)
 
-To be decided...
+As we have a laser cutter in-house, I was able to produce a test cut of the pcb and panel to help check my component dimensions. A paper print would also do the job, but with a laser cut you can also seat the components and check stability etc.
 
+I overcomplicated it and need a better workflow for next time. Ideally I would be able to export a single .svg file containing just `Edge Cuts` and the drill file holes combined.
+
+Some tips:
+- We can produce drill map files as well as drill files, as these can be open directly in the pcb editor
+    - Note that they don't appear in the .gbrjob file
+- If we don't want to use drill files, `Edge Cuts` and `F_Mask` or `B_Mask` layers would do
+- It would be best to stay in the pcb editor, as we can export .svg's directly from it
+    - Unfortunately it produces one .svg per layer, which we then have to combine manually!
+        - `Plot on All Layers` function may help
+        - `Drill marks` section may help, but I couldn't get the marks to appear
+- Probably avoid working in the Gerber viewer directly. This is because:
+    - we have the .gbrjob file, but it doesn't contain drill file layers
+        - creating drill map files that can be open and copied directly into our main PCB Editor file is better
+    - we can't export .svg's directly from the Gerber viewer, so we end up having to export back the PCB Viewer anyway!
+    - one last-resort option would be to install on the laser cutter PC and use 'Print' option for Gerber viewer, but I don't like it!
+
+- component heights should be such that they all poke through the front panel at the same height (check with 3D model)
+
+- PROBLEM: it's the main board not the panel that needs to be mirrored - how to do this? See [here](https://www.reddit.com/r/KiCad/comments/sazql5/is_there_a_mirror_tool_for_flipping_the_pcb_layout/)
+
+- Note: our screw holes on the panel template are not perfectly placed! complete the mounting holes section in the table below
+
+# 9. Send to manufacturer
+
+I chose JLCPCB for this job. The process was to:
+- upload all the .gbr and .drl files (igoring the .gbrjob file) as a .zip file.
+- do a final check in the online 2D/3D and gerber viewer
+
+Some options were:
+- lead vs lead free PCBs (I chose lead for the PCB, lead-free for the panel)
+- PCB colour (colours other than green take longer, as jobs are put together in batches)
+- tented vs untented vias (after some research I chose tented)
+- serial number placement
+    - JLCPCB prints an internal serial number on each PCB and to not include it you have to pay.
+    - BUT you can choose the placement by placing silkscreen text `JLCJLCJLCJLC` in the design
+    - I chose to put it on the (largely empty) back of my boards
+    - It would be annoying on the front of panels!
+
+I missed sending the B_Mask layer, which got flagged by JLCPCB and I had to upload again. For this reason i future I think it's always better:
+    - to not remove any layers from `File -> Board Setup`, just ignore the ones you don't need
+    - not to worry about empty layer files in the final upload, plot and zip them all (it's not an issue for the manufacturer) otherwise you risk missing something
+    - i wanted to omit layers like `User Drawings` but I don't think it mattered in the end (we would see it in the online viewer)
+
+Would text as copper on the top layer instead of silkscreening be possible next time?
 
 ## Links
 TL072 sheet:  
