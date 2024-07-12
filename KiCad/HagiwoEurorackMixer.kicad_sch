@@ -1,1625 +1,4860 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Amplifier_Operational:TL072" (pin_names (offset 0.127)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "TL072" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_locked" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_keywords" "dual opamp" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "TL072_1_1"
-        (polyline
-          (pts
-            (xy -5.08 5.08)
-            (xy 5.08 0)
-            (xy -5.08 -5.08)
-            (xy -5.08 5.08)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin output line (at 7.62 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 -2.54 0) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 2.54 0) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "TL072_2_1"
-        (polyline
-          (pts
-            (xy -5.08 5.08)
-            (xy 5.08 0)
-            (xy -5.08 -5.08)
-            (xy -5.08 5.08)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (pin input line (at -7.62 2.54 0) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -7.62 -2.54 0) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin output line (at 7.62 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "TL072_3_1"
-        (pin power_in line (at -2.54 -7.62 90) (length 3.81)
-          (name "V-" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -2.54 7.62 270) (length 3.81)
-          (name "V+" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Connector_Audio:AudioJack2_SwitchT" (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 8.89 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "AudioJack2_SwitchT" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "audio jack receptacle mono headphones phone TS connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Jack*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "AudioJack2_SwitchT_0_1"
-        (rectangle (start -2.54 0) (end -3.81 -2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy 1.778 -0.254)
-            (xy 2.032 -0.762)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0.635 -0.635)
-            (xy 1.27 0)
-            (xy 2.54 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 -2.54)
-            (xy 1.778 -2.54)
-            (xy 1.778 -0.254)
-            (xy 1.524 -0.762)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 2.54)
-            (xy -0.635 2.54)
-            (xy -0.635 0)
-            (xy -1.27 -0.635)
-            (xy -1.905 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 2.54 3.81) (end -2.54 -5.08)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "AudioJack2_SwitchT_1_1"
-        (pin passive line (at 5.08 2.54 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "S" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "T" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "TN" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:C_Polarized" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.635 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C_Polarized" (at 0.635 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0.9652 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "cap capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Polarized capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "CP_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_Polarized_0_1"
-        (rectangle (start -2.286 0.508) (end 2.286 1.016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.778 2.286)
-            (xy -0.762 2.286)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 2.794)
-            (xy -1.27 1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 2.286 -0.508) (end -2.286 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "C_Polarized_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R res resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:R_Potentiometer" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "RV" (at -4.445 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R_Potentiometer" (at -2.54 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "resistor variable" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Potentiometer" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Potentiometer*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_Potentiometer_0_1"
-        (polyline
-          (pts
-            (xy 2.54 0)
-            (xy 1.524 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.143 0)
-            (xy 2.286 0.508)
-            (xy 2.286 -0.508)
-            (xy 1.143 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 1.016 2.54) (end -1.016 -2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_Potentiometer_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 1.27)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "eurocad:EURO_PWR_2x5" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 -7.62 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Value" "EURO_PWR_2x5" (at 0 7.62 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (symbol "EURO_PWR_2x5_0_1"
-        (rectangle (start -6.35 6.35) (end 6.35 -6.35)
-          (stroke (width 0) (type solid))
-          (fill (type background))
-        )
-      )
-      (symbol "EURO_PWR_2x5_1_1"
-        (pin power_in line (at -11.43 5.08 0) (length 5.08)
-          (name "+12V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 11.43 -5.08 180) (length 5.08)
-          (name "-12V" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 11.43 5.08 180) (length 5.08)
-          (name "+12V" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -11.43 2.54 0) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 11.43 2.54 180) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -11.43 0 0) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 11.43 0 180) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -11.43 -2.54 0) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 11.43 -2.54 180) (length 5.08)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at -11.43 -5.08 0) (length 5.08)
-          (name "-12V" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 80.01 40.64) (diameter 0) (color 0 0 0 0)
-    (uuid 03b60420-7c0e-4e70-9e80-621673d99687)
-  )
-  (junction (at 62.23 71.12) (diameter 0) (color 0 0 0 0)
-    (uuid 0e6cdd2d-c61f-4b9a-af0f-522691b7966b)
-  )
-  (junction (at 49.53 58.42) (diameter 0) (color 0 0 0 0)
-    (uuid 15eef75b-65f8-45bf-b799-b6f76f8935a5)
-  )
-  (junction (at 96.52 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid 171b327f-3682-45af-9261-44e88e907dad)
-  )
-  (junction (at 91.44 77.47) (diameter 0) (color 0 0 0 0)
-    (uuid 2a5b3591-803c-4942-acbc-24d23061096f)
-  )
-  (junction (at 64.77 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid 38284b9a-5242-4fd2-8f68-b495a38263b0)
-  )
-  (junction (at 68.58 69.85) (diameter 0) (color 0 0 0 0)
-    (uuid 4254ad57-56f3-4969-834f-4f6198768b31)
-  )
-  (junction (at 64.77 38.1) (diameter 0) (color 0 0 0 0)
-    (uuid 4734798b-0736-4643-ba53-3d95dfb6361f)
-  )
-  (junction (at 49.53 41.91) (diameter 0) (color 0 0 0 0)
-    (uuid 479f298f-b186-4085-a004-ea9fdf247ac8)
-  )
-  (junction (at 102.87 43.18) (diameter 0) (color 0 0 0 0)
-    (uuid 4d13b55a-825f-42dc-a997-dc56de40272d)
-  )
-  (junction (at 62.23 54.61) (diameter 0) (color 0 0 0 0)
-    (uuid 513831d0-e512-4518-95da-a93352bfeb86)
-  )
-  (junction (at 68.58 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid 5409fa0a-7af1-4b55-b5e1-a4dac4b9ef74)
-  )
-  (junction (at 49.53 91.44) (diameter 0) (color 0 0 0 0)
-    (uuid 71c92cf6-b32d-4360-be28-e720a4d67bf0)
-  )
-  (junction (at 87.63 40.64) (diameter 0) (color 0 0 0 0)
-    (uuid 7a910aed-e222-417e-a63c-8c732e7dc97d)
-  )
-  (junction (at 91.44 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid 7cb2cef1-bdea-4008-9c58-1fe795b49418)
-  )
-  (junction (at 64.77 74.93) (diameter 0) (color 0 0 0 0)
-    (uuid 84b98701-87fc-4f52-9c51-1306dce224d2)
-  )
-  (junction (at 62.23 38.1) (diameter 0) (color 0 0 0 0)
-    (uuid 8855e177-b757-4952-be1d-4623a73c96e0)
-  )
-  (junction (at 68.58 74.93) (diameter 0) (color 0 0 0 0)
-    (uuid 8d262e69-31e3-4c93-88e7-1f9a191fdef0)
-  )
-  (junction (at 96.52 72.39) (diameter 0) (color 0 0 0 0)
-    (uuid a0ddd536-15ac-4f39-a74a-cbc2c89a9a78)
-  )
-  (junction (at 49.53 74.93) (diameter 0) (color 0 0 0 0)
-    (uuid a23105ff-21cc-404a-b2f0-50de870c97bc)
-  )
-  (junction (at 96.52 64.77) (diameter 0) (color 0 0 0 0)
-    (uuid b4366f97-1948-4911-893f-8963fa1022c8)
-  )
-  (junction (at 87.63 30.48) (diameter 0) (color 0 0 0 0)
-    (uuid c9562268-0054-468b-a65d-8f27dd86ad94)
-  )
-  (junction (at 91.44 67.31) (diameter 0) (color 0 0 0 0)
-    (uuid ca9341ce-c81b-4635-a16d-45390c211eb7)
-  )
-
-  (no_connect (at 40.64 34.29) (uuid 2c73a070-e407-4e4a-924d-525e36e5c6ce))
-  (no_connect (at 40.64 83.82) (uuid 535c7f09-075e-4698-a126-6ca59bd244fa))
-  (no_connect (at 40.64 67.31) (uuid 60b2b005-bc62-4e2a-adea-265f407c6d7a))
-  (no_connect (at 113.03 43.18) (uuid 80dfd908-6de0-44de-883e-28a7e305b630))
-  (no_connect (at 40.64 50.8) (uuid a065fc54-c3fb-493d-8cc5-f1d8a6d35f4a))
-
-  (wire (pts (xy 41.91 86.36) (xy 41.91 83.82))
-    (stroke (width 0) (type default))
-    (uuid 0204ab21-5db0-4fd3-9146-0c5ffb2cb8d4)
-  )
-  (wire (pts (xy 111.76 43.18) (xy 111.76 45.72))
-    (stroke (width 0) (type default))
-    (uuid 031c6d92-e62b-437d-a6d4-ae11e5cc82ae)
-  )
-  (wire (pts (xy 49.53 74.93) (xy 40.64 74.93))
-    (stroke (width 0) (type default))
-    (uuid 0a11d3bf-cb67-42b6-bf54-fcd205e42fbd)
-  )
-  (wire (pts (xy 64.77 72.39) (xy 64.77 74.93))
-    (stroke (width 0) (type default))
-    (uuid 0c1765ed-0864-43c9-821c-df64e062a138)
-  )
-  (wire (pts (xy 68.58 77.47) (xy 91.44 77.47))
-    (stroke (width 0) (type default))
-    (uuid 0e53f3b2-24a7-4295-bec5-0f0512c7c1be)
-  )
-  (wire (pts (xy 40.64 69.85) (xy 41.91 69.85))
-    (stroke (width 0) (type default))
-    (uuid 27ccd329-a8da-4de1-b2eb-a3261fa96bbb)
-  )
-  (wire (pts (xy 87.63 52.07) (xy 87.63 45.72))
-    (stroke (width 0) (type default))
-    (uuid 28eef1d3-63ff-46ea-82ad-2066331a456f)
-  )
-  (wire (pts (xy 64.77 72.39) (xy 68.58 72.39))
-    (stroke (width 0) (type default))
-    (uuid 29310539-88ed-40a2-bd68-4a023a849296)
-  )
-  (wire (pts (xy 41.91 53.34) (xy 41.91 50.8))
-    (stroke (width 0) (type default))
-    (uuid 34eb5878-acb1-43c0-8aa4-5d333400501e)
-  )
-  (wire (pts (xy 87.63 30.48) (xy 87.63 40.64))
-    (stroke (width 0) (type default))
-    (uuid 3c6d073b-0f2c-4275-8314-f6c16f1946c0)
-  )
-  (wire (pts (xy 60.96 38.1) (xy 62.23 38.1))
-    (stroke (width 0) (type default))
-    (uuid 3d79ea11-787a-43fb-a6ba-e696eff948c3)
-  )
-  (wire (pts (xy 64.77 38.1) (xy 64.77 30.48))
-    (stroke (width 0) (type default))
-    (uuid 3e5dfbde-7019-4638-b506-c911ed59a75e)
-  )
-  (wire (pts (xy 40.64 91.44) (xy 40.64 88.9))
-    (stroke (width 0) (type default))
-    (uuid 3f9a0677-27a5-4c4d-a233-de5f757212cc)
-  )
-  (wire (pts (xy 41.91 69.85) (xy 41.91 67.31))
-    (stroke (width 0) (type default))
-    (uuid 423b2a46-1684-4a56-b918-0b4f44319d87)
-  )
-  (wire (pts (xy 64.77 74.93) (xy 64.77 86.36))
-    (stroke (width 0) (type default))
-    (uuid 427dc116-11af-4b66-9ca2-fc1a329e99ee)
-  )
-  (wire (pts (xy 102.87 30.48) (xy 102.87 43.18))
-    (stroke (width 0) (type default))
-    (uuid 4428091d-12f8-42b8-b537-b2884a9835e4)
-  )
-  (wire (pts (xy 80.01 30.48) (xy 80.01 40.64))
-    (stroke (width 0) (type default))
-    (uuid 45d2f6b4-c0bd-41a7-977d-fa23ccb45e44)
-  )
-  (wire (pts (xy 68.58 69.85) (xy 64.77 69.85))
-    (stroke (width 0) (type default))
-    (uuid 5936582e-89ed-43b0-b24c-6eaae99b92db)
-  )
-  (wire (pts (xy 40.64 36.83) (xy 41.91 36.83))
-    (stroke (width 0) (type default))
-    (uuid 5ecdc919-3a09-4161-8247-f010d808e121)
-  )
-  (wire (pts (xy 62.23 38.1) (xy 64.77 38.1))
-    (stroke (width 0) (type default))
-    (uuid 653df46f-2bc3-4224-9130-a8d207bab894)
-  )
-  (wire (pts (xy 62.23 54.61) (xy 62.23 71.12))
-    (stroke (width 0) (type default))
-    (uuid 65a75942-2d51-496e-91b8-b4235de8f55f)
-  )
-  (wire (pts (xy 49.53 41.91) (xy 40.64 41.91))
-    (stroke (width 0) (type default))
-    (uuid 6d46f215-3242-4bc2-bb3a-44c570d2e8b4)
-  )
-  (wire (pts (xy 41.91 36.83) (xy 41.91 34.29))
-    (stroke (width 0) (type default))
-    (uuid 6d6fe547-aa35-4710-aacc-a2224ec09a86)
-  )
-  (wire (pts (xy 91.44 72.39) (xy 96.52 72.39))
-    (stroke (width 0) (type default))
-    (uuid 73526f06-a70d-47aa-ba7d-2c1708ffbad6)
-  )
-  (wire (pts (xy 64.77 43.18) (xy 64.77 52.07))
-    (stroke (width 0) (type default))
-    (uuid 762e55e0-f155-47db-98f6-34b21d06ed7c)
-  )
-  (wire (pts (xy 68.58 67.31) (xy 91.44 67.31))
-    (stroke (width 0) (type default))
-    (uuid 7dde153c-9cd4-4ab5-9c83-2dd585dd5a81)
-  )
-  (wire (pts (xy 62.23 71.12) (xy 62.23 87.63))
-    (stroke (width 0) (type default))
-    (uuid 7f760d6c-8215-475a-9536-15b55a778e85)
-  )
-  (wire (pts (xy 40.64 41.91) (xy 40.64 39.37))
-    (stroke (width 0) (type default))
-    (uuid 7f95b472-9db8-4b6e-8fe8-5bcdeda81a95)
-  )
-  (wire (pts (xy 76.2 30.48) (xy 80.01 30.48))
-    (stroke (width 0) (type default))
-    (uuid 7ffa4a27-a834-42c1-9d5d-b553676f514d)
-  )
-  (wire (pts (xy 64.77 74.93) (xy 68.58 74.93))
-    (stroke (width 0) (type default))
-    (uuid 8a9c415f-bbe7-41d5-9219-dd4bb7ec5a04)
-  )
-  (wire (pts (xy 41.91 50.8) (xy 49.53 50.8))
-    (stroke (width 0) (type default))
-    (uuid 8ca58d39-3cff-4cc8-8139-05c7cd280de1)
-  )
-  (wire (pts (xy 91.44 80.01) (xy 96.52 80.01))
-    (stroke (width 0) (type default))
-    (uuid 8ca9d5e1-ea67-4087-ace5-74b6c04fc363)
-  )
-  (wire (pts (xy 91.44 26.67) (xy 87.63 26.67))
-    (stroke (width 0) (type default))
-    (uuid 8d7b54eb-0c69-490b-95d4-59ae4b74c903)
-  )
-  (wire (pts (xy 106.68 48.26) (xy 106.68 50.8))
-    (stroke (width 0) (type default))
-    (uuid 8f25db1e-5eba-4458-bae5-bb9f20d7e303)
-  )
-  (wire (pts (xy 40.64 74.93) (xy 40.64 72.39))
-    (stroke (width 0) (type default))
-    (uuid 8fc000f0-ac89-4be0-ba80-6af1a9c20a98)
-  )
-  (wire (pts (xy 111.76 45.72) (xy 113.03 45.72))
-    (stroke (width 0) (type default))
-    (uuid 910af949-de69-4e1e-88ff-8e1ead822445)
-  )
-  (wire (pts (xy 49.53 91.44) (xy 40.64 91.44))
-    (stroke (width 0) (type default))
-    (uuid 91d7abde-ba19-4788-b210-c623ec52b846)
-  )
-  (wire (pts (xy 40.64 86.36) (xy 41.91 86.36))
-    (stroke (width 0) (type default))
-    (uuid 980c02d0-c177-4d85-b68c-d69284e194d4)
-  )
-  (wire (pts (xy 60.96 54.61) (xy 62.23 54.61))
-    (stroke (width 0) (type default))
-    (uuid 983c7fff-76b0-4f52-8802-86981f8f93a3)
-  )
-  (wire (pts (xy 91.44 64.77) (xy 96.52 64.77))
-    (stroke (width 0) (type default))
-    (uuid 9a10c477-787b-4f4d-a1e8-af24a169d370)
-  )
-  (wire (pts (xy 68.58 74.93) (xy 91.44 74.93))
-    (stroke (width 0) (type default))
-    (uuid 9cfe864f-fba7-484d-b315-35250d71fcd2)
-  )
-  (wire (pts (xy 68.58 69.85) (xy 91.44 69.85))
-    (stroke (width 0) (type default))
-    (uuid a4fffdf4-c9f1-4c85-b423-56d1fcff4488)
-  )
-  (wire (pts (xy 41.91 34.29) (xy 49.53 34.29))
-    (stroke (width 0) (type default))
-    (uuid a62ffa90-57c7-4e47-b6c3-0fe8852a0ffd)
-  )
-  (wire (pts (xy 113.03 48.26) (xy 106.68 48.26))
-    (stroke (width 0) (type default))
-    (uuid a6fd9e00-72fb-44eb-9ba5-8fdbf9d4f967)
-  )
-  (wire (pts (xy 60.96 71.12) (xy 62.23 71.12))
-    (stroke (width 0) (type default))
-    (uuid aa5e1ae0-0c88-49db-84b4-5e34c2882e76)
-  )
-  (wire (pts (xy 41.91 83.82) (xy 49.53 83.82))
-    (stroke (width 0) (type default))
-    (uuid ae1b999d-9b8d-4317-88a3-b69edca6b456)
-  )
-  (wire (pts (xy 87.63 26.67) (xy 87.63 30.48))
-    (stroke (width 0) (type default))
-    (uuid b6ad24e5-951d-4642-9ae4-e40a1dff52df)
-  )
-  (wire (pts (xy 64.77 69.85) (xy 64.77 72.39))
-    (stroke (width 0) (type default))
-    (uuid ba4250e9-0424-40e8-8744-20c6e9960463)
-  )
-  (wire (pts (xy 64.77 30.48) (xy 68.58 30.48))
-    (stroke (width 0) (type default))
-    (uuid ba64d735-f458-42d0-a222-862b139eb8a9)
-  )
-  (wire (pts (xy 91.44 67.31) (xy 91.44 64.77))
-    (stroke (width 0) (type default))
-    (uuid c4b4f2b1-c765-4c44-b473-888f662c1845)
-  )
-  (wire (pts (xy 41.91 67.31) (xy 49.53 67.31))
-    (stroke (width 0) (type default))
-    (uuid c9f9456f-e6d9-421e-9df0-5bf14dc9e9df)
-  )
-  (wire (pts (xy 60.96 87.63) (xy 62.23 87.63))
-    (stroke (width 0) (type default))
-    (uuid ca6549de-d91a-49d7-957c-6914e9b3974f)
-  )
-  (wire (pts (xy 91.44 77.47) (xy 91.44 80.01))
-    (stroke (width 0) (type default))
-    (uuid cceaf051-90b5-41eb-b69b-7e5a0d7ee0fe)
-  )
-  (wire (pts (xy 49.53 58.42) (xy 40.64 58.42))
-    (stroke (width 0) (type default))
-    (uuid dfaf117a-e697-4c7b-8cf7-0f61cb9813aa)
-  )
-  (wire (pts (xy 62.23 38.1) (xy 62.23 54.61))
-    (stroke (width 0) (type default))
-    (uuid e31ba59c-bd58-482a-a50a-8977f9a6f577)
-  )
-  (wire (pts (xy 96.52 80.01) (xy 109.22 80.01))
-    (stroke (width 0) (type default))
-    (uuid eab6ad7f-b4e9-4850-b3dc-899d50011cfc)
-  )
-  (wire (pts (xy 96.52 64.77) (xy 109.22 64.77))
-    (stroke (width 0) (type default))
-    (uuid ebab0fe0-5eea-4043-bbf4-b5d6f2d283d9)
-  )
-  (wire (pts (xy 40.64 58.42) (xy 40.64 55.88))
-    (stroke (width 0) (type default))
-    (uuid f3981e2d-0d74-4af6-a998-f11fb0d9ce54)
-  )
-  (wire (pts (xy 110.49 43.18) (xy 111.76 43.18))
-    (stroke (width 0) (type default))
-    (uuid f5bbac18-a7dd-4703-9901-34ae7d94e3e9)
-  )
-  (wire (pts (xy 68.58 72.39) (xy 91.44 72.39))
-    (stroke (width 0) (type default))
-    (uuid f7bd4081-bffe-4c8a-9486-cf0c0e2d03e6)
-  )
-  (wire (pts (xy 40.64 53.34) (xy 41.91 53.34))
-    (stroke (width 0) (type default))
-    (uuid f83ea347-6be0-4ee6-8626-52b71c229db2)
-  )
-
-  (symbol (lib_id "power:GND") (at 49.53 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0184d08c-cc4b-47ff-a109-445c372a6fba)
-    (property "Reference" "#PWR011" (at 49.53 97.79 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 49.53 96.52 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 49.53 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 49.53 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4db9b1f0-1cb4-4b38-928f-6e2531ef39c0))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR011") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "eurocad:EURO_PWR_2x5") (at 80.01 72.39 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 02a1b045-1434-4f7a-9e98-47d1df69a3fb)
-    (property "Reference" "J6" (at 80.01 60.96 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "EURO_PWR_2x5" (at 80.01 63.5 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" (at 80.01 72.39 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Datasheet" "" (at 80.01 72.39 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (pin "8" (uuid 137b0b73-ea17-4428-95e2-b6877e8808c5))
-    (pin "9" (uuid 6ba4e99b-25e6-4da0-91f2-22830e3f26b6))
-    (pin "6" (uuid 80d31011-8fdc-4a05-bcb3-9412dcbf7bd8))
-    (pin "2" (uuid 29cd572d-134b-47f1-9089-fdfdba53197a))
-    (pin "3" (uuid c220884b-e2de-4bfe-921c-588feae7082c))
-    (pin "4" (uuid 6cb26129-3503-42b7-a9a9-70c192489c4c))
-    (pin "7" (uuid 824d43a5-6a8c-4010-8a01-84632518a520))
-    (pin "10" (uuid f073bbf0-5bd3-4902-89ac-bcc13af72e1c))
-    (pin "1" (uuid a90ffd47-f359-4821-a09e-4abf1cbda477))
-    (pin "5" (uuid 96543121-8252-4596-80fd-758ec91c5f79))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "J6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 57.15 87.63 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 05e51f15-1d38-4670-8337-76771210ef9d)
-    (property "Reference" "R4" (at 57.15 81.28 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100K" (at 57.15 83.82 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 57.15 89.408 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 57.15 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 6afaa435-d3e5-4c78-9a50-9b4b70cb83be))
-    (pin "1" (uuid b8cede45-f3fd-4233-a88d-fd27d1d887b5))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Audio:AudioJack2_SwitchT") (at 118.11 45.72 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 09d4e438-8409-4b6c-bc8a-2e5c5c5635f8)
-    (property "Reference" "J5" (at 118.745 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AudioJack2_SwitchT" (at 118.745 52.07 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "eurocad:PJ301M-12_T_S" (at 118.11 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 118.11 45.72 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "T" (uuid 60727b31-6c2b-41bf-97d0-693d9bdea726))
-    (pin "S" (uuid 1dec8c3e-059c-4145-acba-9fbfa4b47c94))
-    (pin "TN" (uuid bd26af16-ef4e-4e73-8b0c-beda24167a98))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "J5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Audio:AudioJack2_SwitchT") (at 35.56 86.36 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0da6af26-6280-4fe9-b6a0-d0f95678bdad)
-    (property "Reference" "J4" (at 34.925 95.25 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AudioJack2_SwitchT" (at 34.925 92.71 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "eurocad:PJ301M-12_T_S" (at 35.56 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 35.56 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "T" (uuid dff69bb5-fb8a-48ff-a28d-578457ef6956))
-    (pin "S" (uuid 5ca84515-3c47-43d7-a70e-574ce8ff9c3b))
-    (pin "TN" (uuid cc3b4a47-14d6-4a94-9594-8656c2e9976c))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "J4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 99.06 30.48 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1a3db5b6-2726-47f3-a03d-a66be15e46ea)
-    (property "Reference" "R7" (at 99.06 24.13 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "4.7K" (at 99.06 26.67 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 99.06 32.258 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 99.06 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid ed77b900-2bb8-4bc5-bdc1-79670c13a387))
-    (pin "1" (uuid 3fcbda26-f415-4cef-9a72-baa6c2053032))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 87.63 52.07 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1eb77d96-c063-4948-87bf-523cdbb2cb51)
-    (property "Reference" "#PWR04" (at 87.63 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 87.63 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 87.63 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 87.63 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e99e1160-e407-4318-99fd-7aa9cca4d67c))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 49.53 58.42 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 21469123-e2ce-481e-9560-ecf45347344b)
-    (property "Reference" "#PWR06" (at 49.53 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 49.53 63.5 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 49.53 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 49.53 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e425f494-832b-4428-ab29-428b7760aec0))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 72.39 30.48 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 31920db5-1564-488f-856d-1060b5f48d77)
-    (property "Reference" "R5" (at 72.39 24.13 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100K" (at 72.39 26.67 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 72.39 32.258 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 72.39 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid e5cde358-f4d6-4949-9a68-3c5f79e4838d))
-    (pin "1" (uuid f82b23ec-9bb1-4b86-ac6b-c234deb27823))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Potentiometer") (at 49.53 38.1 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3565179c-c769-46b7-a983-9d097ab96005)
-    (property "Reference" "RV1" (at 46.99 36.83 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10K" (at 46.99 39.37 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "eurocad:Alpha9mmPot" (at 49.53 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 49.53 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 239758aa-a1a7-4973-aa3e-937d601929f5))
-    (pin "3" (uuid 49481175-118b-4f7a-8beb-247d6894754f))
-    (pin "1" (uuid 9940d760-8fd9-44e2-b596-555a49f52477))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "RV1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 57.15 38.1 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3841d4e9-a7a4-4dc0-bf7e-b86c44b2f1a9)
-    (property "Reference" "R1" (at 57.15 31.75 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100K" (at 57.15 34.29 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 57.15 39.878 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 57.15 38.1 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid d2ce0324-1e7b-4634-bee3-6e868008bc7c))
-    (pin "1" (uuid 5a188b14-8ff1-4b8f-862c-4782e721dc9f))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 57.15 54.61 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 400136f2-8615-4974-9f94-c5dba8073588)
-    (property "Reference" "R2" (at 57.15 48.26 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100K" (at 57.15 50.8 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 57.15 56.388 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 57.15 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 6efc2eb1-6e1a-4512-8169-477e638baf6f))
-    (pin "1" (uuid 3100f733-4bd7-4f16-8336-fb118c96e168))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 49.53 74.93 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 58b94549-32c7-45d6-b3f6-2cd72cc86b35)
-    (property "Reference" "#PWR010" (at 49.53 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 49.53 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 49.53 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 49.53 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 18d5abf9-c56d-4227-b4dc-5c1404bdbc7d))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR010") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 106.68 43.18 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5f50254e-52a7-4161-8a66-cb7ab650318a)
-    (property "Reference" "R8" (at 106.68 36.83 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "1K" (at 106.68 39.37 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 106.68 44.958 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 106.68 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 74dbae8c-dea3-49ce-92de-df9841e614b6))
-    (pin "1" (uuid 9145a021-12b7-491b-9427-0e2cda818b72))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Audio:AudioJack2_SwitchT") (at 35.56 69.85 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 674b679e-78a7-424d-8d09-153c12fbadbc)
-    (property "Reference" "J3" (at 34.925 78.74 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AudioJack2_SwitchT" (at 34.925 76.2 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "eurocad:PJ301M-12_T_S" (at 35.56 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 35.56 69.85 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "T" (uuid bb819ac2-b62d-4040-abee-b39f4f2a01c8))
-    (pin "S" (uuid 92a6322f-b627-44e4-ac01-b0e1f79040af))
-    (pin "TN" (uuid cb5950a0-8510-489f-bf0c-56e8e9f2480b))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "J3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 49.53 41.91 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6ae8adcd-6c3b-44bd-a428-b6e4e70d35cf)
-    (property "Reference" "#PWR01" (at 49.53 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 49.53 46.99 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 49.53 41.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 49.53 41.91 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c3a5805f-c9a6-44da-87f8-479cb890848e))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Amplifier_Operational:TL072") (at 111.76 72.39 0) (unit 3)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6d437ef9-8f30-4a62-b820-1f0ed347d52d)
-    (property "Reference" "U2" (at 110.49 71.12 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TL072" (at 110.49 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (at 111.76 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf" (at 111.76 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "8" (uuid e7d890e4-9fe4-4e4e-b284-f1fb816b22d3))
-    (pin "3" (uuid 0b091c32-c589-4676-bc9a-7826e3cb9e2f))
-    (pin "4" (uuid a8e200be-06c9-4335-9622-18ac37231eb0))
-    (pin "1" (uuid 7abca3a7-e035-4d82-b34b-43afb3cc3ecd))
-    (pin "2" (uuid 0e7ed2c4-5b4d-4a9b-866c-18d0c2264c6b))
-    (pin "7" (uuid 481ec58e-60fd-4dc6-9f64-f91cec282951))
-    (pin "5" (uuid 79692e18-de17-4b38-82ee-3584eea5eaa6))
-    (pin "6" (uuid bc352b9d-c331-41e8-af20-7d71370d5bb4))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "U2") (unit 3)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Audio:AudioJack2_SwitchT") (at 35.56 36.83 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 70dd9d8b-af55-4c25-9692-f04fea0bf751)
-    (property "Reference" "J1" (at 34.925 45.72 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AudioJack2_SwitchT" (at 34.925 43.18 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "eurocad:PJ301M-12_T_S" (at 35.56 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 35.56 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "T" (uuid ca3b8e1d-1afa-4abd-ab83-1e1674da8e69))
-    (pin "S" (uuid 929f8ed6-8a34-46f0-a3e3-a3100e9674d7))
-    (pin "TN" (uuid bd0da5f3-926b-4cd3-a89a-cfe870f61695))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "J1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Potentiometer") (at 49.53 87.63 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7e058c3f-e95d-43bf-913e-adea4c04cf9b)
-    (property "Reference" "RV4" (at 46.99 86.36 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10K" (at 46.99 88.9 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "eurocad:Alpha9mmPot" (at 49.53 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 49.53 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 50476aa1-7b4f-4e48-a4c7-29ecbde0a067))
-    (pin "3" (uuid af8c25d7-a48c-4b20-8ea2-7940b0b3d750))
-    (pin "1" (uuid c213d733-1925-451a-9f16-173adfde4833))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "RV4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Audio:AudioJack2_SwitchT") (at 35.56 53.34 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 85b40350-9a4b-497f-aad6-ce5beb54bb8f)
-    (property "Reference" "J2" (at 34.925 62.23 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "AudioJack2_SwitchT" (at 34.925 59.69 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "eurocad:PJ301M-12_T_S" (at 35.56 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 35.56 53.34 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "T" (uuid 6e05902b-b620-4b1f-981a-2d4f4afc557a))
-    (pin "S" (uuid aa047f34-27f9-4584-bba5-c04ad5d13df3))
-    (pin "TN" (uuid 3d8e4251-815d-4d31-971c-649eea7a87e6))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "J2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Potentiometer") (at 91.44 30.48 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8f13b901-2b48-4546-9da9-b46d8f71d35b)
-    (property "Reference" "RV5" (at 91.44 34.29 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100K" (at 91.44 36.83 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "eurocad:Alpha9mmPot" (at 91.44 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 91.44 30.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid c40378be-5ce9-45c1-a98a-7fc01b52831a))
-    (pin "3" (uuid 33e6f38c-b7f7-4b32-9996-7ed671b552f0))
-    (pin "1" (uuid 5a169950-b0c0-4ac5-9a04-763fc3131b85))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "RV5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 64.77 52.07 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 92ebccf6-2db2-45f4-b636-16afef4f510b)
-    (property "Reference" "#PWR03" (at 64.77 58.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 64.77 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 64.77 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 64.77 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 39052275-e959-45ad-bfcc-b607dfde192a))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 96.52 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a77f3e03-fd12-4b58-995b-57687e1d2bd6)
-    (property "Reference" "C2" (at 100.33 74.041 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "4.7uF" (at 100.33 76.581 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" (at 97.4852 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 96.52 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 289cd77e-ff83-4eed-beba-612b53e4737d))
-    (pin "2" (uuid c75db1ef-4f1b-4558-9741-824fd61b9732))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "C2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Amplifier_Operational:TL072") (at 95.25 43.18 0) (mirror x) (unit 2)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid acec0786-939c-4343-864b-cd4f91ea7c9c)
-    (property "Reference" "U2" (at 95.25 53.34 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TL072" (at 95.25 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (at 95.25 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf" (at 95.25 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "8" (uuid e7d890e4-9fe4-4e4e-b284-f1fb816b22d4))
-    (pin "3" (uuid 0b091c32-c589-4676-bc9a-7826e3cb9e30))
-    (pin "4" (uuid a8e200be-06c9-4335-9622-18ac37231eb1))
-    (pin "1" (uuid 7abca3a7-e035-4d82-b34b-43afb3cc3ece))
-    (pin "2" (uuid 0e7ed2c4-5b4d-4a9b-866c-18d0c2264c6c))
-    (pin "7" (uuid 481ec58e-60fd-4dc6-9f64-f91cec282952))
-    (pin "5" (uuid 79692e18-de17-4b38-82ee-3584eea5eaa7))
-    (pin "6" (uuid bc352b9d-c331-41e8-af20-7d71370d5bb5))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "U2") (unit 2)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 106.68 50.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b47f7d87-00c0-4799-8e69-f53d809f0e0c)
-    (property "Reference" "#PWR07" (at 106.68 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 106.68 55.88 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 106.68 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 106.68 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5b597cb8-9dfe-4d6e-a597-e6803af1f8e2))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 96.52 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b655aa97-1d01-45de-bc08-20adde550c94)
-    (property "Reference" "C1" (at 100.33 66.421 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "4.7uF" (at 100.33 68.961 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" (at 97.4852 72.39 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 96.52 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7d4dd157-9a36-4d59-af29-e9d30a5a1a5b))
-    (pin "2" (uuid f983c1e7-cc08-4e02-886f-d0f7aca02d2d))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "C1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 64.77 86.36 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid dbbdd9c3-965d-4177-a321-41eb79c40514)
-    (property "Reference" "#PWR012" (at 64.77 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 64.77 91.44 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 64.77 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 64.77 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9a336280-45eb-4e81-96ea-f7ce2e12e3de))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "#PWR012") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 57.15 71.12 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid e7ef279e-232f-44d8-af3c-8465f93b3aa5)
-    (property "Reference" "R3" (at 57.15 64.77 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100K" (at 57.15 67.31 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 57.15 72.898 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 57.15 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid e14a7c70-c396-4287-b85b-696f7ecc6a8d))
-    (pin "1" (uuid b925048a-8edb-4116-9b65-b9df09d4f20f))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Potentiometer") (at 49.53 54.61 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ee1affdb-a8be-4ae6-b272-241e23bb51e3)
-    (property "Reference" "RV2" (at 46.99 53.34 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10K" (at 46.99 55.88 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "eurocad:Alpha9mmPot" (at 49.53 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 49.53 54.61 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 0b4fa1b5-92cf-4575-9a1f-a62e16631b2d))
-    (pin "3" (uuid 6aa9a96a-a533-4111-83a6-2c8e4fc7de3e))
-    (pin "1" (uuid 28769b0d-380c-477e-8e1c-0a360cb9d00e))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "RV2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 83.82 40.64 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid eff8441c-fa77-467d-ba7e-4e69badb5491)
-    (property "Reference" "R6" (at 83.82 34.29 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "22K" (at 83.82 36.83 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 83.82 42.418 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 83.82 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid fcec44b1-e052-4b9e-b7aa-838933895853))
-    (pin "1" (uuid 59f9eb47-d99a-4268-9005-dc61a96eca42))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "R6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Amplifier_Operational:TL072") (at 72.39 40.64 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid f4a0f100-7d5a-4717-bcfd-7c7532b84e7f)
-    (property "Reference" "U2" (at 72.39 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "TL072" (at 72.39 48.26 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (at 72.39 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf" (at 72.39 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "8" (uuid e7d890e4-9fe4-4e4e-b284-f1fb816b22d5))
-    (pin "3" (uuid 0b091c32-c589-4676-bc9a-7826e3cb9e31))
-    (pin "4" (uuid a8e200be-06c9-4335-9622-18ac37231eb2))
-    (pin "1" (uuid 7abca3a7-e035-4d82-b34b-43afb3cc3ecf))
-    (pin "2" (uuid 0e7ed2c4-5b4d-4a9b-866c-18d0c2264c6d))
-    (pin "7" (uuid 481ec58e-60fd-4dc6-9f64-f91cec282953))
-    (pin "5" (uuid 79692e18-de17-4b38-82ee-3584eea5eaa8))
-    (pin "6" (uuid bc352b9d-c331-41e8-af20-7d71370d5bb6))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "U2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Potentiometer") (at 49.53 71.12 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fed68e32-41c6-4be5-ad14-f665515cc354)
-    (property "Reference" "RV3" (at 46.99 69.85 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "10K" (at 46.99 72.39 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "eurocad:Alpha9mmPot" (at 49.53 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 49.53 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 54955559-bd4a-4d24-8d97-1f508e93119c))
-    (pin "3" (uuid 3590d526-126d-4132-87a6-626fb23ab119))
-    (pin "1" (uuid 31e26cd1-bd3d-47b3-9dbe-8deb013295bc))
-    (instances
-      (project "HigawoEurorackMixer"
-        (path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
-          (reference "RV3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21")
+	(paper "A4")
+	(title_block
+		(title "Hagiwo Eurorack Mixer")
+		(date "2024-07-12")
+		(rev "v1.1")
+		(comment 1 "4 channel as opposed to original 5 channel version")
+	)
+	(lib_symbols
+		(symbol "Amplifier_Operational:TL072"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TL072"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TL072_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TL072_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TL072_3_1"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector_Audio:AudioJack2_SwitchT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AudioJack2_SwitchT"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle mono headphones phone TS connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AudioJack2_SwitchT_0_1"
+				(rectangle
+					(start -2.54 0)
+					(end -3.81 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -0.254) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0.635 -0.635) (xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 1.778 -2.54) (xy 1.778 -0.254) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -0.635 2.54) (xy -0.635 0) (xy -1.27 -0.635) (xy -1.905 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 3.81)
+					(end -2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AudioJack2_SwitchT_1_1"
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "TN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "GND_1"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_1_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PCM_4ms_Connector:Eurorack_Power_10pin_Unshrouded"
+			(pin_names
+				(offset 0.0254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Eurorack_Power_10pin_Unshrouded"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "4ms_Connector:Pins_2x05_2.54mm_TH_Europower"
+				(at 2.54 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -30.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "HEADER 2x5 MALE PINS 0.100” 180deg"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Specifications" "HEADER 2x5 MALE PINS 0.100” 180deg"
+				(at 0 -21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TAD"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number" "1-1002FBV0T"
+				(at 0 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Eurorack_Power_10pin_Unshrouded"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin_Header_Straight_2X* Pin_Header_Angled_2X* Socket_Strip_Straight_2X* Socket_Strip_Angled_2X* IDC_Header_Straight_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Eurorack_Power_10pin_Unshrouded_0_0"
+				(text "+12"
+					(at 0 1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "-12"
+					(at 0 -8.89 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -6.35 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -3.81 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "GND"
+					(at 0 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "STRIPE"
+					(at -6.35 -11.43 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(symbol "Eurorack_Power_10pin_Unshrouded_0_1"
+				(rectangle
+					(start -2.54 -10.16)
+					(end 2.54 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -2.54 -8.763)
+					(end -1.27 -9.017)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -6.223)
+					(end -1.27 -6.477)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -3.683)
+					(end -1.27 -3.937)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -1.143)
+					(end -1.27 -1.397)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 1.397)
+					(end -1.27 1.143)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -11.43) (xy 3.81 -11.43) (xy 1.27 -11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 -8.763)
+					(end 2.54 -9.017)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 -6.223)
+					(end 2.54 -6.477)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 -3.683)
+					(end 2.54 -3.937)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 -1.143)
+					(end 2.54 -1.397)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 1.397)
+					(end 2.54 1.143)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Eurorack_Power_10pin_Unshrouded_1_1"
+				(pin passive line
+					(at -6.35 1.27 0)
+					(length 3.81)
+					(name "+12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -8.89 180)
+					(length 3.81)
+					(name "-12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 1.27 180)
+					(length 3.81)
+					(name "+12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -1.27 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -1.27 180)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -3.81 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -3.81 180)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -6.35 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 -6.35 180)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -8.89 0)
+					(length 3.81)
+					(name "-12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 80.01 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03b60420-7c0e-4e70-9e80-621673d99687")
+	)
+	(junction
+		(at 49.53 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06fb343d-dffd-474b-8339-f417fa6d8029")
+	)
+	(junction
+		(at 74.93 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d1c4877-7091-4228-a71b-8a7c6a56691c")
+	)
+	(junction
+		(at 62.23 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e6cdd2d-c61f-4b9a-af0f-522691b7966b")
+	)
+	(junction
+		(at 105.41 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "171b327f-3682-45af-9261-44e88e907dad")
+	)
+	(junction
+		(at 64.77 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a9089a1-24b2-4f0c-86d7-f63c9a47efbf")
+	)
+	(junction
+		(at 49.53 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d56b655-93d5-49d8-8498-add44924e1ab")
+	)
+	(junction
+		(at 49.53 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4136ec18-3ce5-49e7-bfbe-15cd1701b0a3")
+	)
+	(junction
+		(at 64.77 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4734798b-0736-4643-ba53-3d95dfb6361f")
+	)
+	(junction
+		(at 102.87 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d13b55a-825f-42dc-a997-dc56de40272d")
+	)
+	(junction
+		(at 62.23 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "513831d0-e512-4518-95da-a93352bfeb86")
+	)
+	(junction
+		(at 114.3 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61c8d9b7-1212-490c-9f34-849a524df26b")
+	)
+	(junction
+		(at 114.3 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f342322-2325-4bc6-b803-91e6e529f82e")
+	)
+	(junction
+		(at 87.63 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a910aed-e222-417e-a63c-8c732e7dc97d")
+	)
+	(junction
+		(at 62.23 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8855e177-b757-4952-be1d-4623a73c96e0")
+	)
+	(junction
+		(at 49.53 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90bd386c-5b31-471b-969a-ae0e484e97ae")
+	)
+	(junction
+		(at 105.41 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4366f97-1948-4911-893f-8963fa1022c8")
+	)
+	(junction
+		(at 87.63 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb188d05-0fb0-4671-b875-6ac8e091a08b")
+	)
+	(junction
+		(at 74.93 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc65e2c9-3a3e-442a-8c66-4879f66f92d7")
+	)
+	(junction
+		(at 87.63 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4f9d884-7e90-42bc-996c-aead1265c8de")
+	)
+	(junction
+		(at 87.63 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9562268-0054-468b-a65d-8f27dd86ad94")
+	)
+	(junction
+		(at 74.93 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffa8416d-64f5-4198-8115-3028fd667694")
+	)
+	(no_connect
+		(at 40.64 34.29)
+		(uuid "2c73a070-e407-4e4a-924d-525e36e5c6ce")
+	)
+	(no_connect
+		(at 40.64 83.82)
+		(uuid "535c7f09-075e-4698-a126-6ca59bd244fa")
+	)
+	(no_connect
+		(at 40.64 67.31)
+		(uuid "60b2b005-bc62-4e2a-adea-265f407c6d7a")
+	)
+	(no_connect
+		(at 113.03 43.18)
+		(uuid "80dfd908-6de0-44de-883e-28a7e305b630")
+	)
+	(no_connect
+		(at 40.64 50.8)
+		(uuid "a065fc54-c3fb-493d-8cc5-f1d8a6d35f4a")
+	)
+	(wire
+		(pts
+			(xy 41.91 86.36) (xy 41.91 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0204ab21-5db0-4fd3-9146-0c5ffb2cb8d4")
+	)
+	(wire
+		(pts
+			(xy 111.76 43.18) (xy 111.76 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "031c6d92-e62b-437d-a6d4-ae11e5cc82ae")
+	)
+	(wire
+		(pts
+			(xy 49.53 74.93) (xy 40.64 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a11d3bf-cb67-42b6-bf54-fcd205e42fbd")
+	)
+	(wire
+		(pts
+			(xy 87.63 64.77) (xy 100.33 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e1faa7f-07c3-4a72-80a6-08ea9dd3a49c")
+	)
+	(wire
+		(pts
+			(xy 74.93 74.93) (xy 87.63 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f6db9f-e5c8-46a8-ae15-179cb6c610d4")
+	)
+	(wire
+		(pts
+			(xy 40.64 69.85) (xy 41.91 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27ccd329-a8da-4de1-b2eb-a3261fa96bbb")
+	)
+	(wire
+		(pts
+			(xy 87.63 52.07) (xy 87.63 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28eef1d3-63ff-46ea-82ad-2066331a456f")
+	)
+	(wire
+		(pts
+			(xy 64.77 69.85) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31adbece-7db9-40f8-9ed7-24affd8b7a2d")
+	)
+	(wire
+		(pts
+			(xy 41.91 53.34) (xy 41.91 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34eb5878-acb1-43c0-8aa4-5d333400501e")
+	)
+	(wire
+		(pts
+			(xy 114.3 62.23) (xy 118.11 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38ce5621-cedc-45bc-8c71-1d9974140956")
+	)
+	(wire
+		(pts
+			(xy 87.63 30.48) (xy 87.63 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c6d073b-0f2c-4275-8314-f6c16f1946c0")
+	)
+	(wire
+		(pts
+			(xy 60.96 38.1) (xy 62.23 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d79ea11-787a-43fb-a6ba-e696eff948c3")
+	)
+	(wire
+		(pts
+			(xy 64.77 38.1) (xy 64.77 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e5dfbde-7019-4638-b506-c911ed59a75e")
+	)
+	(wire
+		(pts
+			(xy 40.64 91.44) (xy 40.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f9a0677-27a5-4c4d-a233-de5f757212cc")
+	)
+	(wire
+		(pts
+			(xy 41.91 69.85) (xy 41.91 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "423b2a46-1684-4a56-b918-0b4f44319d87")
+	)
+	(wire
+		(pts
+			(xy 102.87 30.48) (xy 102.87 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4428091d-12f8-42b8-b537-b2884a9835e4")
+	)
+	(wire
+		(pts
+			(xy 80.01 30.48) (xy 80.01 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45d2f6b4-c0bd-41a7-977d-fa23ccb45e44")
+	)
+	(wire
+		(pts
+			(xy 74.93 69.85) (xy 87.63 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f5504ae-81a8-495f-a186-26ff8689f904")
+	)
+	(wire
+		(pts
+			(xy 74.93 67.31) (xy 87.63 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "542bfcc6-0ae6-4e46-9ce8-ed85a52a1380")
+	)
+	(wire
+		(pts
+			(xy 40.64 36.83) (xy 41.91 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ecdc919-3a09-4161-8247-f010d808e121")
+	)
+	(wire
+		(pts
+			(xy 62.23 38.1) (xy 64.77 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "653df46f-2bc3-4224-9130-a8d207bab894")
+	)
+	(wire
+		(pts
+			(xy 62.23 54.61) (xy 62.23 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65a75942-2d51-496e-91b8-b4235de8f55f")
+	)
+	(wire
+		(pts
+			(xy 114.3 77.47) (xy 118.11 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c8814e-b5c4-4191-961b-f2ca3b646973")
+	)
+	(wire
+		(pts
+			(xy 49.53 41.91) (xy 40.64 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d46f215-3242-4bc2-bb3a-44c570d2e8b4")
+	)
+	(wire
+		(pts
+			(xy 41.91 36.83) (xy 41.91 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d6fe547-aa35-4710-aacc-a2224ec09a86")
+	)
+	(wire
+		(pts
+			(xy 64.77 43.18) (xy 64.77 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "762e55e0-f155-47db-98f6-34b21d06ed7c")
+	)
+	(wire
+		(pts
+			(xy 74.93 72.39) (xy 87.63 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e449d89-723d-4d4e-9284-cb03a3a0f33d")
+	)
+	(wire
+		(pts
+			(xy 62.23 71.12) (xy 62.23 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f760d6c-8215-475a-9536-15b55a778e85")
+	)
+	(wire
+		(pts
+			(xy 40.64 41.91) (xy 40.64 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f95b472-9db8-4b6e-8fe8-5bcdeda81a95")
+	)
+	(wire
+		(pts
+			(xy 76.2 30.48) (xy 80.01 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ffa4a27-a834-42c1-9d5d-b553676f514d")
+	)
+	(wire
+		(pts
+			(xy 64.77 86.36) (xy 71.12 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c0144cd-f955-4f32-951a-7d846158b4fa")
+	)
+	(wire
+		(pts
+			(xy 41.91 50.8) (xy 49.53 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca58d39-3cff-4cc8-8139-05c7cd280de1")
+	)
+	(wire
+		(pts
+			(xy 100.33 77.47) (xy 105.41 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca9d5e1-ea67-4087-ace5-74b6c04fc363")
+	)
+	(wire
+		(pts
+			(xy 91.44 26.67) (xy 87.63 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d7b54eb-0c69-490b-95d4-59ae4b74c903")
+	)
+	(wire
+		(pts
+			(xy 106.68 48.26) (xy 106.68 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f25db1e-5eba-4458-bae5-bb9f20d7e303")
+	)
+	(wire
+		(pts
+			(xy 40.64 74.93) (xy 40.64 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fc000f0-ac89-4be0-ba80-6af1a9c20a98")
+	)
+	(wire
+		(pts
+			(xy 111.76 45.72) (xy 113.03 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "910af949-de69-4e1e-88ff-8e1ead822445")
+	)
+	(wire
+		(pts
+			(xy 49.53 91.44) (xy 40.64 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d7abde-ba19-4788-b210-c623ec52b846")
+	)
+	(wire
+		(pts
+			(xy 40.64 86.36) (xy 41.91 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "980c02d0-c177-4d85-b68c-d69284e194d4")
+	)
+	(wire
+		(pts
+			(xy 60.96 54.61) (xy 62.23 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "983c7fff-76b0-4f52-8802-86981f8f93a3")
+	)
+	(wire
+		(pts
+			(xy 100.33 62.23) (xy 105.41 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a10c477-787b-4f4d-a1e8-af24a169d370")
+	)
+	(wire
+		(pts
+			(xy 74.93 64.77) (xy 87.63 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d77666c-9a4e-4a9d-aca6-e688aa863f7b")
+	)
+	(wire
+		(pts
+			(xy 74.93 67.31) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0fa9714-8926-4501-b9db-d8c8ae80e515")
+	)
+	(wire
+		(pts
+			(xy 41.91 34.29) (xy 49.53 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a62ffa90-57c7-4e47-b6c3-0fe8852a0ffd")
+	)
+	(wire
+		(pts
+			(xy 113.03 48.26) (xy 106.68 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6fd9e00-72fb-44eb-9ba5-8fdbf9d4f967")
+	)
+	(wire
+		(pts
+			(xy 60.96 71.12) (xy 62.23 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa5e1ae0-0c88-49db-84b4-5e34c2882e76")
+	)
+	(wire
+		(pts
+			(xy 41.91 83.82) (xy 49.53 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae1b999d-9b8d-4317-88a3-b69edca6b456")
+	)
+	(wire
+		(pts
+			(xy 87.63 26.67) (xy 87.63 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6ad24e5-951d-4642-9ae4-e40a1dff52df")
+	)
+	(wire
+		(pts
+			(xy 64.77 69.85) (xy 64.77 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba4250e9-0424-40e8-8744-20c6e9960463")
+	)
+	(wire
+		(pts
+			(xy 64.77 30.48) (xy 68.58 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba64d735-f458-42d0-a222-862b139eb8a9")
+	)
+	(wire
+		(pts
+			(xy 100.33 64.77) (xy 100.33 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4b4f2b1-c765-4c44-b473-888f662c1845")
+	)
+	(wire
+		(pts
+			(xy 41.91 67.31) (xy 49.53 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9f9456f-e6d9-421e-9df0-5bf14dc9e9df")
+	)
+	(wire
+		(pts
+			(xy 60.96 87.63) (xy 62.23 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca6549de-d91a-49d7-957c-6914e9b3974f")
+	)
+	(wire
+		(pts
+			(xy 100.33 74.93) (xy 100.33 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cceaf051-90b5-41eb-b69b-7e5a0d7ee0fe")
+	)
+	(wire
+		(pts
+			(xy 74.93 69.85) (xy 74.93 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d016e9af-b284-4259-ba42-5ccd476adaf8")
+	)
+	(wire
+		(pts
+			(xy 49.53 58.42) (xy 40.64 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfaf117a-e697-4c7b-8cf7-0f61cb9813aa")
+	)
+	(wire
+		(pts
+			(xy 87.63 74.93) (xy 100.33 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e093e804-2840-4842-8fbd-188d242b80d1")
+	)
+	(wire
+		(pts
+			(xy 62.23 38.1) (xy 62.23 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e31ba59c-bd58-482a-a50a-8977f9a6f577")
+	)
+	(wire
+		(pts
+			(xy 105.41 77.47) (xy 114.3 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eab6ad7f-b4e9-4850-b3dc-899d50011cfc")
+	)
+	(wire
+		(pts
+			(xy 105.41 62.23) (xy 114.3 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebab0fe0-5eea-4043-bbf4-b5d6f2d283d9")
+	)
+	(wire
+		(pts
+			(xy 40.64 58.42) (xy 40.64 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3981e2d-0d74-4af6-a998-f11fb0d9ce54")
+	)
+	(wire
+		(pts
+			(xy 110.49 43.18) (xy 111.76 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5bbac18-a7dd-4703-9901-34ae7d94e3e9")
+	)
+	(wire
+		(pts
+			(xy 40.64 53.34) (xy 41.91 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f83ea347-6be0-4ee6-8626-52b71c229db2")
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 64.77 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "024b685b-60b0-4f1e-81ae-17b311992e09")
+		(property "Reference" "#PWR03"
+			(at 64.77 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c37f943c-daf1-40ca-9614-2a48dc230528")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 57.15 87.63 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05e51f15-1d38-4670-8337-76771210ef9d")
+		(property "Reference" "R4"
+			(at 57.15 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 57.15 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 57.15 89.408 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6afaa435-d3e5-4c78-9a50-9b4b70cb83be")
+		)
+		(pin "1"
+			(uuid "b8cede45-f3fd-4233-a88d-fd27d1d887b5")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 49.53 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "078952af-13d0-4af5-9fd0-a2ffad6eeda8")
+		(property "Reference" "#PWR05"
+			(at 49.53 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "099c50b8-f4ab-403b-a63f-28f65fcea63d")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 118.11 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09d4e438-8409-4b6c-bc8a-2e5c5c5635f8")
+		(property "Reference" "J5"
+			(at 118.745 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OUT"
+			(at 118.745 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
+			(at 118.11 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "60727b31-6c2b-41bf-97d0-693d9bdea726")
+		)
+		(pin "S"
+			(uuid "1dec8c3e-059c-4145-acba-9fbfa4b47c94")
+		)
+		(pin "TN"
+			(uuid "bd26af16-ef4e-4e73-8b0c-beda24167a98")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 35.56 86.36 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0da6af26-6280-4fe9-b6a0-d0f95678bdad")
+		(property "Reference" "J4"
+			(at 34.925 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IN4"
+			(at 34.925 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
+			(at 35.56 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "dff69bb5-fb8a-48ff-a28d-578457ef6956")
+		)
+		(pin "S"
+			(uuid "5ca84515-3c47-43d7-a70e-574ce8ff9c3b")
+		)
+		(pin "TN"
+			(uuid "cc3b4a47-14d6-4a94-9594-8656c2e9976c")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a3db5b6-2726-47f3-a03d-a66be15e46ea")
+		(property "Reference" "R7"
+			(at 99.06 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7K"
+			(at 99.06 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 99.06 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ed77b900-2bb8-4bc5-bdc1-79670c13a387")
+		)
+		(pin "1"
+			(uuid "3fcbda26-f415-4cef-9a72-baa6c2053032")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 49.53 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "28ae8fed-a359-4786-898d-bfabbf8af29c")
+		(property "Reference" "#PWR06"
+			(at 49.53 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c60a6586-8a0c-4156-9787-7610b0be1940")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 72.39 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31920db5-1564-488f-856d-1060b5f48d77")
+		(property "Reference" "R5"
+			(at 72.39 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 72.39 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 72.39 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e5cde358-f4d6-4949-9a68-3c5f79e4838d")
+		)
+		(pin "1"
+			(uuid "f82b23ec-9bb1-4b86-ac6b-c234deb27823")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 49.53 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3565179c-c769-46b7-a983-9d097ab96005")
+		(property "Reference" "RV1"
+			(at 46.99 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 46.99 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Library:Pot_9mm_DShaft_RemovedPins4_5"
+			(at 49.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "239758aa-a1a7-4973-aa3e-937d601929f5")
+		)
+		(pin "3"
+			(uuid "49481175-118b-4f7a-8beb-247d6894754f")
+		)
+		(pin "1"
+			(uuid "9940d760-8fd9-44e2-b596-555a49f52477")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 57.15 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3841d4e9-a7a4-4dc0-bf7e-b86c44b2f1a9")
+		(property "Reference" "R1"
+			(at 57.15 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 57.15 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 57.15 39.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d2ce0324-1e7b-4634-bee3-6e868008bc7c")
+		)
+		(pin "1"
+			(uuid "5a188b14-8ff1-4b8f-862c-4782e721dc9f")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 57.15 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "400136f2-8615-4974-9f94-c5dba8073588")
+		(property "Reference" "R2"
+			(at 57.15 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 57.15 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 57.15 56.388 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6efc2eb1-6e1a-4512-8169-477e638baf6f")
+		)
+		(pin "1"
+			(uuid "3100f733-4bd7-4f16-8336-fb118c96e168")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 106.68 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42c2731b-92a4-4321-b062-e1474a8f11e3")
+		(property "Reference" "#PWR07"
+			(at 106.68 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cafecef-a882-4bf9-a5d1-b1a8388e046c")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 71.12 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "501a9740-d269-49f0-8649-235c4f14e99c")
+		(property "Reference" "#FLG01"
+			(at 71.12 84.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 71.12 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 71.12 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96649d44-1358-4014-a621-c291e562dc95")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 106.68 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f50254e-52a7-4161-8a66-cb7ab650318a")
+		(property "Reference" "R8"
+			(at 106.68 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 106.68 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 106.68 44.958 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "74dbae8c-dea3-49ce-92de-df9841e614b6")
+		)
+		(pin "1"
+			(uuid "9145a021-12b7-491b-9427-0e2cda818b72")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 114.3 77.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61a1ea9e-c484-4a71-bbf4-b0617c26f9b6")
+		(property "Reference" "#FLG02"
+			(at 114.3 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 114.3 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 114.3 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4861359-4840-424d-9782-5fe8d0fae281")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 35.56 69.85 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "674b679e-78a7-424d-8d09-153c12fbadbc")
+		(property "Reference" "J3"
+			(at 34.925 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IN3"
+			(at 34.925 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
+			(at 35.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "bb819ac2-b62d-4040-abee-b39f4f2a01c8")
+		)
+		(pin "S"
+			(uuid "92a6322f-b627-44e4-ac01-b0e1f79040af")
+		)
+		(pin "TN"
+			(uuid "cb5950a0-8510-489f-bf0c-56e8e9f2480b")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 120.65 69.85 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d437ef9-8f30-4a62-b820-1f0ed347d52d")
+		(property "Reference" "U2"
+			(at 119.38 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TL072"
+			(at 119.38 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 120.65 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 120.65 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e7d890e4-9fe4-4e4e-b284-f1fb816b22d3")
+		)
+		(pin "3"
+			(uuid "0b091c32-c589-4676-bc9a-7826e3cb9e2f")
+		)
+		(pin "4"
+			(uuid "a8e200be-06c9-4335-9622-18ac37231eb0")
+		)
+		(pin "1"
+			(uuid "7abca3a7-e035-4d82-b34b-43afb3cc3ecd")
+		)
+		(pin "2"
+			(uuid "0e7ed2c4-5b4d-4a9b-866c-18d0c2264c6b")
+		)
+		(pin "7"
+			(uuid "481ec58e-60fd-4dc6-9f64-f91cec282951")
+		)
+		(pin "5"
+			(uuid "79692e18-de17-4b38-82ee-3584eea5eaa6")
+		)
+		(pin "6"
+			(uuid "bc352b9d-c331-41e8-af20-7d71370d5bb4")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "U2")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 35.56 36.83 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70dd9d8b-af55-4c25-9692-f04fea0bf751")
+		(property "Reference" "J1"
+			(at 34.925 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IN1"
+			(at 34.925 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
+			(at 35.56 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "ca3b8e1d-1afa-4abd-ab83-1e1674da8e69")
+		)
+		(pin "S"
+			(uuid "929f8ed6-8a34-46f0-a3e3-a3100e9674d7")
+		)
+		(pin "TN"
+			(uuid "bd0da5f3-926b-4cd3-a89a-cfe870f61695")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 49.53 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e058c3f-e95d-43bf-913e-adea4c04cf9b")
+		(property "Reference" "RV4"
+			(at 46.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 46.99 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Library:Pot_9mm_DShaft_RemovedPins4_5"
+			(at 49.53 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "50476aa1-7b4f-4e48-a4c7-29ecbde0a067")
+		)
+		(pin "3"
+			(uuid "af8c25d7-a48c-4b20-8ea2-7940b0b3d750")
+		)
+		(pin "1"
+			(uuid "c213d733-1925-451a-9f16-173adfde4833")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "RV4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 64.77 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81adfa63-7c4f-4bea-80bd-426de3c3e3ee")
+		(property "Reference" "#PWR08"
+			(at 64.77 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b196e9ce-6949-4d6e-912b-f650678e8399")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 35.56 53.34 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85b40350-9a4b-497f-aad6-ce5beb54bb8f")
+		(property "Reference" "J2"
+			(at 34.925 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IN2"
+			(at 34.925 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
+			(at 35.56 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "6e05902b-b620-4b1f-981a-2d4f4afc557a")
+		)
+		(pin "S"
+			(uuid "aa047f34-27f9-4584-bba5-c04ad5d13df3")
+		)
+		(pin "TN"
+			(uuid "3d8e4251-815d-4d31-971c-649eea7a87e6")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 91.44 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f13b901-2b48-4546-9da9-b46d8f71d35b")
+		(property "Reference" "RV5"
+			(at 91.44 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 91.44 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LibraryAll:Pot_9mm_DShaft_RemovedPins4_5"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c40378be-5ce9-45c1-a98a-7fc01b52831a")
+		)
+		(pin "3"
+			(uuid "33e6f38c-b7f7-4b32-9996-7ed671b552f0")
+		)
+		(pin "1"
+			(uuid "5a169950-b0c0-4ac5-9a04-763fc3131b85")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "RV5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 49.53 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5711ade-6f0a-4906-bc65-b4ad90c85a98")
+		(property "Reference" "#PWR01"
+			(at 49.53 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c14549c3-6ca1-44bb-a5f1-bba3b9de5cf9")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 105.41 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a77f3e03-fd12-4b58-995b-57687e1d2bd6")
+		(property "Reference" "C2"
+			(at 109.22 71.501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 109.22 74.041 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 106.3752 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "289cd77e-ff83-4eed-beba-612b53e4737d")
+		)
+		(pin "2"
+			(uuid "c75db1ef-4f1b-4558-9741-824fd61b9732")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 95.25 43.18 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "acec0786-939c-4343-864b-cd4f91ea7c9c")
+		(property "Reference" "U2"
+			(at 95.25 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 95.25 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 95.25 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 95.25 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e7d890e4-9fe4-4e4e-b284-f1fb816b22d4")
+		)
+		(pin "3"
+			(uuid "0b091c32-c589-4676-bc9a-7826e3cb9e30")
+		)
+		(pin "4"
+			(uuid "a8e200be-06c9-4335-9622-18ac37231eb1")
+		)
+		(pin "1"
+			(uuid "7abca3a7-e035-4d82-b34b-43afb3cc3ece")
+		)
+		(pin "2"
+			(uuid "0e7ed2c4-5b4d-4a9b-866c-18d0c2264c6c")
+		)
+		(pin "7"
+			(uuid "481ec58e-60fd-4dc6-9f64-f91cec282952")
+		)
+		(pin "5"
+			(uuid "79692e18-de17-4b38-82ee-3584eea5eaa7")
+		)
+		(pin "6"
+			(uuid "bc352b9d-c331-41e8-af20-7d71370d5bb5")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "U2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 114.3 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "adc6ac7f-d84a-4510-8887-f3907f4e737e")
+		(property "Reference" "#FLG03"
+			(at 114.3 60.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 114.3 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 114.3 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3528c5c2-66a0-472f-881c-7f3f2912f8f0")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 87.63 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b326dcfb-badb-47fe-a574-e42d9e7ce950")
+		(property "Reference" "#PWR04"
+			(at 87.63 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5dbbb821-f78b-4ebf-86c4-873d29d54dd2")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 105.41 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b655aa97-1d01-45de-bc08-20adde550c94")
+		(property "Reference" "C1"
+			(at 109.22 63.881 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 109.22 66.421 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 106.3752 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7d4dd157-9a36-4d59-af29-e9d30a5a1a5b")
+		)
+		(pin "2"
+			(uuid "f983c1e7-cc08-4e02-886f-d0f7aca02d2d")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 49.53 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e34e36aa-0121-42aa-9db3-d7b58f0757b1")
+		(property "Reference" "#PWR02"
+			(at 49.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eed23a13-efb5-40b9-871f-095f541184da")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 57.15 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7ef279e-232f-44d8-af3c-8465f93b3aa5")
+		(property "Reference" "R3"
+			(at 57.15 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100K"
+			(at 57.15 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 57.15 72.898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 57.15 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e14a7c70-c396-4287-b85b-696f7ecc6a8d")
+		)
+		(pin "1"
+			(uuid "b925048a-8edb-4116-9b65-b9df09d4f20f")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_4ms_Connector:Eurorack_Power_10pin_Unshrouded")
+		(at 81.28 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8bca8f7-3f99-47dd-b794-4a248d48ab6d")
+		(property "Reference" "J7"
+			(at 79.1733 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Eurorack_Power_10pin_Unshrouded"
+			(at 79.1733 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:IDC-Header_2x05_P2.54mm_Vertical_Euro_Power_Striped"
+			(at 83.82 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "HEADER 2x5 MALE PINS 0.100” 180deg"
+			(at 81.28 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Specifications" "HEADER 2x5 MALE PINS 0.100” 180deg"
+			(at 81.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAD"
+			(at 81.28 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "1-1002FBV0T"
+			(at 81.28 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "cc465c5b-14b9-4f57-8e9c-67e476794d02")
+		)
+		(pin "7"
+			(uuid "036af82a-eaf9-4e58-83b5-e90be65da1ac")
+		)
+		(pin "6"
+			(uuid "e7b6ab0d-2ad9-4074-b414-054c64c473f7")
+		)
+		(pin "2"
+			(uuid "cba103c7-467e-440a-b616-71efc4633ecc")
+		)
+		(pin "10"
+			(uuid "5da73e91-7d7c-44c2-a057-e238de1f065c")
+		)
+		(pin "8"
+			(uuid "7c07ea9d-2a12-4015-8c00-983fe44fb99f")
+		)
+		(pin "3"
+			(uuid "5fb31b56-0836-4435-9244-a174f72f8227")
+		)
+		(pin "4"
+			(uuid "ca9e8351-6d58-4a8f-bc31-610900dce311")
+		)
+		(pin "1"
+			(uuid "da5e3585-5b97-4405-a5b1-19226153673c")
+		)
+		(pin "5"
+			(uuid "140e2113-76a8-4a95-a48d-ad18e254c103")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 49.53 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee1affdb-a8be-4ae6-b272-241e23bb51e3")
+		(property "Reference" "RV2"
+			(at 46.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 46.99 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Library:Pot_9mm_DShaft_RemovedPins4_5"
+			(at 49.53 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0b4fa1b5-92cf-4575-9a1f-a62e16631b2d")
+		)
+		(pin "3"
+			(uuid "6aa9a96a-a533-4111-83a6-2c8e4fc7de3e")
+		)
+		(pin "1"
+			(uuid "28769b0d-380c-477e-8e1c-0a360cb9d00e")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "RV2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 83.82 40.64 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eff8441c-fa77-467d-ba7e-4e69badb5491")
+		(property "Reference" "R6"
+			(at 83.82 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22K"
+			(at 83.82 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 83.82 42.418 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fcec44b1-e052-4b9e-b7aa-838933895853")
+		)
+		(pin "1"
+			(uuid "59f9eb47-d99a-4268-9005-dc61a96eca42")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL072")
+		(at 72.39 40.64 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4a0f100-7d5a-4717-bcfd-7c7532b84e7f")
+		(property "Reference" "U2"
+			(at 72.39 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL072"
+			(at 72.39 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 72.39 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 72.39 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e7d890e4-9fe4-4e4e-b284-f1fb816b22d5")
+		)
+		(pin "3"
+			(uuid "0b091c32-c589-4676-bc9a-7826e3cb9e31")
+		)
+		(pin "4"
+			(uuid "a8e200be-06c9-4335-9622-18ac37231eb2")
+		)
+		(pin "1"
+			(uuid "7abca3a7-e035-4d82-b34b-43afb3cc3ecf")
+		)
+		(pin "2"
+			(uuid "0e7ed2c4-5b4d-4a9b-866c-18d0c2264c6d")
+		)
+		(pin "7"
+			(uuid "481ec58e-60fd-4dc6-9f64-f91cec282953")
+		)
+		(pin "5"
+			(uuid "79692e18-de17-4b38-82ee-3584eea5eaa8")
+		)
+		(pin "6"
+			(uuid "bc352b9d-c331-41e8-af20-7d71370d5bb6")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 49.53 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fed68e32-41c6-4be5-ad14-f665515cc354")
+		(property "Reference" "RV3"
+			(at 46.99 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 46.99 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Library:Pot_9mm_DShaft_RemovedPins4_5"
+			(at 49.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "54955559-bd4a-4d24-8d97-1f508e93119c")
+		)
+		(pin "3"
+			(uuid "3590d526-126d-4132-87a6-626fb23ab119")
+		)
+		(pin "1"
+			(uuid "31e26cd1-bd3d-47b3-9dbe-8deb013295bc")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

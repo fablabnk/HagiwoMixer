@@ -1,0 +1,384 @@
+(footprint "Pins_2x05_2.54mm_TH_Europower_Shrouded"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "Through hole pin header THT 2x05 2.54mm Eurorack power europower")
+	(property "Reference" "J7"
+		(at 0 -1.35 -90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e8140839-3aff-40da-8feb-bcbd63474c17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Eurorack_Power_10pin_Unshrouded"
+		(at 0 8.85 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "14fc6065-6b86-47bd-b7b6-ed482d7dc7e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.2032)
+			)
+		)
+	)
+	(property "Footprint" "Pins_2x05_2.54mm_TH_Europower_Shrouded"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0730de66-6dea-475d-b2fd-c28753025417")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "221d0e00-9a08-443a-88b9-dc6043d4358a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "HEADER 2x5 MALE PINS 0.100” 180deg"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0f8f7a0-5e91-4bbc-84d4-31df6c966100")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Specifications" "HEADER 2x5 MALE PINS 0.100” 180deg"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c07cc312-7ad6-4809-bf66-6c52dc3aa963")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "TAD"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c641852a-14ce-44f1-b0f6-98f2443a1c21")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Part Number" "1-1002FBV0T"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c9a0c6f-fdb2-4432-a52e-f44d3500ff20")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.75 7.35)
+		(end 2.79 7.35)
+		(stroke
+			(width 1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "35928b2e-22a0-431c-9131-5e02b19b023a")
+	)
+	(fp_line
+		(start -2.66 -6.47)
+		(end -2.66 6.47)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "276edf9b-7e0a-4317-9804-cae13b8d6c16")
+	)
+	(fp_line
+		(start -2.66 6.47)
+		(end 2.66 6.47)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ccf6db8d-eff8-4f3e-82ff-2d00390c5810")
+	)
+	(fp_line
+		(start 2.66 -6.47)
+		(end -2.66 -6.47)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d04b906a-0967-48e0-8cb7-1759fdac1704")
+	)
+	(fp_line
+		(start 2.66 -2.54)
+		(end 2.66 -6.47)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aeebdae7-f9fa-423a-8395-732b031b86f7")
+	)
+	(fp_line
+		(start 2.66 6.47)
+		(end 2.66 2.54)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b99c0d90-e381-4260-b03d-69e5b031f763")
+	)
+	(fp_line
+		(start -3.4 -8.75)
+		(end 3.4 -8.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "dbc7fd7d-cad1-44b5-bff5-b12cb49a94d0")
+	)
+	(fp_line
+		(start -3.4 8.75)
+		(end -3.4 -8.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "2ab3930a-dcce-440b-90f5-d95a2c664e8a")
+	)
+	(fp_line
+		(start -3.4 8.75)
+		(end 3.4 8.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "b91ad4f2-1d5a-4372-b85d-38f569108f0a")
+	)
+	(fp_line
+		(start 3.4 8.75)
+		(end 3.4 -8.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "74d7bb28-9736-40d7-a881-2637d6d0a83f")
+	)
+	(fp_line
+		(start -2.71 -6.38)
+		(end -2.71 6.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5dd1e8cb-87a7-4dac-af19-38aecb979406")
+	)
+	(fp_line
+		(start -2.71 6.38)
+		(end 2.71 6.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "13f69e65-2d52-4b72-8cee-659ccd0d702e")
+	)
+	(fp_line
+		(start 2.71 -6.38)
+		(end -2.71 -6.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "27e20b99-7e72-45f4-b1d3-1ba8a19d4a1e")
+	)
+	(fp_line
+		(start 2.71 6.38)
+		(end 2.71 -6.38)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6bf3bec0-6299-4d7c-83a7-cdf09f12cc64")
+	)
+	(fp_text user "-12V"
+		(at -4.648 5.67 180)
+		(layer "F.SilkS")
+		(uuid "3be54dec-956e-43a9-b921-25cccb98750a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "- key -"
+		(at 2.2606 -2.5908 -90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ae2fd4db-6803-4af1-b132-f52be039959d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "cable"
+		(at 0.01 8.2 180)
+		(layer "Dwgs.User")
+		(uuid "470a1534-ba8d-431d-a2fa-9813d838b7ba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "cable"
+		(at 0.01 -8.01 180)
+		(layer "Dwgs.User")
+		(uuid "49de4cf6-d845-48cc-9916-25cac103a4a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at -1.27 -5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "161c1bee-959a-46ea-8d7f-13196f938ad1")
+	)
+	(pad "2" thru_hole oval
+		(at 1.27 -5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "21372642-1985-43bf-991b-5d6fc8518bed")
+	)
+	(pad "3" thru_hole oval
+		(at -1.27 -2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cd5f81af-f33e-412d-8038-27077b34d23f")
+	)
+	(pad "4" thru_hole oval
+		(at 1.27 -2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5bb5bfa2-5159-4e7f-8037-1f2cf2fc522e")
+	)
+	(pad "5" thru_hole oval
+		(at -1.27 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5892de0a-bb09-4573-b03b-b94ad1358b00")
+	)
+	(pad "6" thru_hole oval
+		(at 1.27 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ea5a57bd-bb4f-43c0-8e03-d5addbb52318")
+	)
+	(pad "7" thru_hole oval
+		(at -1.27 2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3004bb24-8144-4faf-b125-86fd8c6889e9")
+	)
+	(pad "8" thru_hole oval
+		(at 1.27 2.54)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8f0ce5fc-a813-4d80-b2e3-d1f0fc268c8c")
+	)
+	(pad "9" thru_hole oval
+		(at -1.27 5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "14267b5f-b3e8-4c90-bbb4-2746b57081e7")
+	)
+	(pad "10" thru_hole oval
+		(at 1.27 5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "998a1575-3870-4bde-9cd8-02bb03052988")
+	)
+	(model "${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step"
+		(offset
+			(xyz -1.27 5.02 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

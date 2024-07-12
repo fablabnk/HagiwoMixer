@@ -1,5 +1,6 @@
 (fp_lib_table
   (version 7)
-  (lib (name "eurocad")(type "KiCad")(uri "/home/grm/Desktop/SynthLab/Electronics/eurocad/Eurocad.pretty")(options "")(descr ""))
+  (lib (name "eurocad")(type "KiCad")(uri "/home/grm/Desktop/SynthLab/Libraries/eurocad")(options "")(descr ""))
   (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
+  (lib (name "LibraryAll")(type "KiCad")(uri "/home/grm/Desktop/SynthLab/Libraries/Library.pretty")(options "")(descr ""))
 )
