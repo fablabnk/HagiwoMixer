@@ -3864,7 +3864,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LibraryAll:Pot_9mm_DShaft_RemovedPins4_5"
+		(property "Footprint" "Library:Pot_9mm_DShaft_RemovedPins4_5"
 			(at 91.44 30.48 0)
 			(effects
 				(font
