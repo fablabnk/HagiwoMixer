@@ -1689,15 +1689,15 @@
 		(uuid "ffa8416d-64f5-4198-8115-3028fd667694")
 	)
 	(no_connect
-		(at 40.64 34.29)
+		(at 38.1 34.29)
 		(uuid "2c73a070-e407-4e4a-924d-525e36e5c6ce")
 	)
 	(no_connect
-		(at 40.64 83.82)
+		(at 38.1 83.82)
 		(uuid "535c7f09-075e-4698-a126-6ca59bd244fa")
 	)
 	(no_connect
-		(at 40.64 67.31)
+		(at 38.1 67.31)
 		(uuid "60b2b005-bc62-4e2a-adea-265f407c6d7a")
 	)
 	(no_connect
@@ -1705,18 +1705,8 @@
 		(uuid "80dfd908-6de0-44de-883e-28a7e305b630")
 	)
 	(no_connect
-		(at 40.64 50.8)
+		(at 38.1 50.8)
 		(uuid "a065fc54-c3fb-493d-8cc5-f1d8a6d35f4a")
-	)
-	(wire
-		(pts
-			(xy 41.91 86.36) (xy 41.91 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0204ab21-5db0-4fd3-9146-0c5ffb2cb8d4")
 	)
 	(wire
 		(pts
@@ -1760,13 +1750,13 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 69.85) (xy 41.91 69.85)
+			(xy 38.1 88.9) (xy 40.64 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27ccd329-a8da-4de1-b2eb-a3261fa96bbb")
+		(uuid "2820be30-a80e-4918-8d85-8da5d16dd942")
 	)
 	(wire
 		(pts
@@ -1780,6 +1770,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 39.37) (xy 40.64 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dbb8f63-f66e-4645-b559-e8d03085d007")
+	)
+	(wire
+		(pts
 			(xy 64.77 69.85) (xy 74.93 69.85)
 		)
 		(stroke
@@ -1790,7 +1790,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 53.34) (xy 41.91 50.8)
+			(xy 40.64 53.34) (xy 40.64 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1850,7 +1850,17 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 69.85) (xy 41.91 67.31)
+			(xy 38.1 55.88) (xy 40.64 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4184b011-f046-43bd-93d5-7e1dc07de069")
+	)
+	(wire
+		(pts
+			(xy 40.64 69.85) (xy 40.64 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1900,16 +1910,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 36.83) (xy 41.91 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ecdc919-3a09-4161-8247-f010d808e121")
-	)
-	(wire
-		(pts
 			(xy 62.23 38.1) (xy 64.77 38.1)
 		)
 		(stroke
@@ -1950,7 +1950,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 36.83) (xy 41.91 34.29)
+			(xy 40.64 36.83) (xy 40.64 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2020,7 +2020,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 50.8) (xy 49.53 50.8)
+			(xy 40.64 50.8) (xy 49.53 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2090,16 +2090,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 86.36) (xy 41.91 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "980c02d0-c177-4d85-b68c-d69284e194d4")
-	)
-	(wire
-		(pts
 			(xy 60.96 54.61) (xy 62.23 54.61)
 		)
 		(stroke
@@ -2140,13 +2130,23 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 34.29) (xy 49.53 34.29)
+			(xy 40.64 34.29) (xy 49.53 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a62ffa90-57c7-4e47-b6c3-0fe8852a0ffd")
+	)
+	(wire
+		(pts
+			(xy 38.1 36.83) (xy 40.64 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a69e0153-7c32-4b5c-8f2b-a241465254f3")
 	)
 	(wire
 		(pts
@@ -2170,13 +2170,33 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 83.82) (xy 49.53 83.82)
+			(xy 38.1 72.39) (xy 40.64 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acc7118e-5201-48ac-bb00-eea51c309ef6")
+	)
+	(wire
+		(pts
+			(xy 40.64 83.82) (xy 49.53 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ae1b999d-9b8d-4317-88a3-b69edca6b456")
+	)
+	(wire
+		(pts
+			(xy 38.1 53.34) (xy 40.64 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae61bcf8-671f-4ca7-9bf1-56e8c1987325")
 	)
 	(wire
 		(pts
@@ -2220,7 +2240,17 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 67.31) (xy 49.53 67.31)
+			(xy 40.64 83.82) (xy 40.64 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8dada37-477c-44aa-b0e6-cae936acef8b")
+	)
+	(wire
+		(pts
+			(xy 40.64 67.31) (xy 49.53 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2310,6 +2340,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 69.85) (xy 40.64 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1d7affe-263e-43c4-950f-b92564e9069c")
+	)
+	(wire
+		(pts
 			(xy 40.64 58.42) (xy 40.64 55.88)
 		)
 		(stroke
@@ -2330,13 +2370,13 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 53.34) (xy 41.91 53.34)
+			(xy 38.1 86.36) (xy 40.64 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f83ea347-6be0-4ee6-8626-52b71c229db2")
+		(uuid "f6fe54ca-1b10-4eae-bca6-675e7eb7635a")
 	)
 	(symbol
 		(lib_name "GND_1")
@@ -2612,7 +2652,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 35.56 86.36 0)
+		(at 33.02 86.36 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2621,7 +2661,7 @@
 		(dnp no)
 		(uuid "0da6af26-6280-4fe9-b6a0-d0f95678bdad")
 		(property "Reference" "J4"
-			(at 34.925 95.25 0)
+			(at 32.385 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2629,7 +2669,7 @@
 			)
 		)
 		(property "Value" "IN4"
-			(at 34.925 92.71 0)
+			(at 32.385 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2637,7 +2677,7 @@
 			)
 		)
 		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
-			(at 35.56 86.36 0)
+			(at 33.02 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2646,7 +2686,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 86.36 0)
+			(at 33.02 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2655,7 +2695,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 86.36 0)
+			(at 33.02 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,7 +2935,7 @@
 		(fields_autoplaced yes)
 		(uuid "3565179c-c769-46b7-a983-9d097ab96005")
 		(property "Reference" "RV1"
-			(at 46.99 36.83 0)
+			(at 46.99 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2904,7 +2944,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 46.99 39.37 0)
+			(at 46.99 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3360,7 +3400,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 35.56 69.85 0)
+		(at 33.02 69.85 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3369,7 +3409,7 @@
 		(dnp no)
 		(uuid "674b679e-78a7-424d-8d09-153c12fbadbc")
 		(property "Reference" "J3"
-			(at 34.925 78.74 0)
+			(at 32.385 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3377,7 +3417,7 @@
 			)
 		)
 		(property "Value" "IN3"
-			(at 34.925 76.2 0)
+			(at 32.385 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3385,7 +3425,7 @@
 			)
 		)
 		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
-			(at 35.56 69.85 0)
+			(at 33.02 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3394,7 +3434,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 69.85 0)
+			(at 33.02 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,7 +3443,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 69.85 0)
+			(at 33.02 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3519,7 +3559,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 35.56 36.83 0)
+		(at 33.02 36.83 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3528,7 +3568,7 @@
 		(dnp no)
 		(uuid "70dd9d8b-af55-4c25-9692-f04fea0bf751")
 		(property "Reference" "J1"
-			(at 34.925 45.72 0)
+			(at 32.385 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3536,7 +3576,7 @@
 			)
 		)
 		(property "Value" "IN1"
-			(at 34.925 43.18 0)
+			(at 32.385 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3544,7 +3584,7 @@
 			)
 		)
 		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
-			(at 35.56 36.83 0)
+			(at 33.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3553,7 +3593,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 36.83 0)
+			(at 33.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3562,7 +3602,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 36.83 0)
+			(at 33.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3599,7 +3639,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e058c3f-e95d-43bf-913e-adea4c04cf9b")
 		(property "Reference" "RV4"
-			(at 46.99 86.36 0)
+			(at 46.99 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3608,7 +3648,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 46.99 88.9 0)
+			(at 46.99 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3730,7 +3770,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 35.56 53.34 0)
+		(at 33.02 53.34 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3739,7 +3779,7 @@
 		(dnp no)
 		(uuid "85b40350-9a4b-497f-aad6-ce5beb54bb8f")
 		(property "Reference" "J2"
-			(at 34.925 62.23 0)
+			(at 32.385 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3747,7 +3787,7 @@
 			)
 		)
 		(property "Value" "IN2"
-			(at 34.925 59.69 0)
+			(at 32.385 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3755,7 +3795,7 @@
 			)
 		)
 		(property "Footprint" "Library:EighthInch_PJ398SM_T_TN_S"
-			(at 35.56 53.34 0)
+			(at 33.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3764,7 +3804,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 53.34 0)
+			(at 33.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3773,7 +3813,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 53.34 0)
+			(at 33.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3807,7 +3847,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8f13b901-2b48-4546-9da9-b46d8f71d35b")
 		(property "Reference" "RV5"
 			(at 91.44 34.29 90)
@@ -4563,7 +4602,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee1affdb-a8be-4ae6-b272-241e23bb51e3")
 		(property "Reference" "RV2"
-			(at 46.99 53.34 0)
+			(at 46.99 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4572,7 +4611,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 46.99 55.88 0)
+			(at 46.99 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4790,7 +4829,7 @@
 		(fields_autoplaced yes)
 		(uuid "fed68e32-41c6-4be5-ad14-f665515cc354")
 		(property "Reference" "RV3"
-			(at 46.99 69.85 0)
+			(at 46.99 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4799,7 +4838,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 46.99 72.39 0)
+			(at 46.99 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
