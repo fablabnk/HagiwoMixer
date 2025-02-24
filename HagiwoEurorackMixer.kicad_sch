@@ -616,6 +616,169 @@
 				)
 			)
 		)
+		(symbol "Device:D"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1563,10 +1726,10 @@
 		(uuid "03b60420-7c0e-4e70-9e80-621673d99687")
 	)
 	(junction
-		(at 49.53 41.91)
+		(at 87.63 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "06fb343d-dffd-474b-8339-f417fa6d8029")
+		(uuid "0948e419-41a5-4618-9aed-62aafad63404")
 	)
 	(junction
 		(at 74.93 69.85)
@@ -1587,6 +1750,12 @@
 		(uuid "171b327f-3682-45af-9261-44e88e907dad")
 	)
 	(junction
+		(at 49.53 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30b7c045-a0cf-420e-9943-00908df01fa1")
+	)
+	(junction
 		(at 64.77 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1596,13 +1765,7 @@
 		(at 49.53 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3d56b655-93d5-49d8-8498-add44924e1ab")
-	)
-	(junction
-		(at 49.53 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4136ec18-3ce5-49e7-bfbe-15cd1701b0a3")
+		(uuid "3f066c0c-fac7-40b8-b696-375aa2772bf4")
 	)
 	(junction
 		(at 64.77 38.1)
@@ -1629,6 +1792,12 @@
 		(uuid "61c8d9b7-1212-490c-9f34-849a524df26b")
 	)
 	(junction
+		(at 49.53 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ed3ec99-14e1-42bb-a050-e433a65a18ed")
+	)
+	(junction
 		(at 114.3 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1647,10 +1816,10 @@
 		(uuid "8855e177-b757-4952-be1d-4623a73c96e0")
 	)
 	(junction
-		(at 49.53 74.93)
+		(at 87.63 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "90bd386c-5b31-471b-969a-ae0e484e97ae")
+		(uuid "93d7ea5d-5b67-471d-b678-46a1e0673818")
 	)
 	(junction
 		(at 105.41 62.23)
@@ -1659,28 +1828,22 @@
 		(uuid "b4366f97-1948-4911-893f-8963fa1022c8")
 	)
 	(junction
-		(at 87.63 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb188d05-0fb0-4671-b875-6ac8e091a08b")
-	)
-	(junction
 		(at 74.93 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc65e2c9-3a3e-442a-8c66-4879f66f92d7")
 	)
 	(junction
-		(at 87.63 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4f9d884-7e90-42bc-996c-aead1265c8de")
-	)
-	(junction
 		(at 87.63 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9562268-0054-468b-a65d-8f27dd86ad94")
+	)
+	(junction
+		(at 49.53 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff4e1949-718e-41ac-8d64-bacb112c5acd")
 	)
 	(junction
 		(at 74.93 72.39)
@@ -1727,16 +1890,6 @@
 			(type default)
 		)
 		(uuid "0a11d3bf-cb67-42b6-bf54-fcd205e42fbd")
-	)
-	(wire
-		(pts
-			(xy 87.63 64.77) (xy 100.33 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e1faa7f-07c3-4a72-80a6-08ea9dd3a49c")
 	)
 	(wire
 		(pts
@@ -1960,6 +2113,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 74.93) (xy 90.17 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "747dbf6f-f8f6-45ff-96dd-b861a538868c")
+	)
+	(wire
+		(pts
 			(xy 64.77 43.18) (xy 64.77 52.07)
 		)
 		(stroke
@@ -2080,6 +2243,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 74.93) (xy 100.33 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91533efe-f484-475e-a2ee-c0f5b2c9ad43")
+	)
+	(wire
+		(pts
 			(xy 49.53 91.44) (xy 40.64 91.44)
 		)
 		(stroke
@@ -2160,6 +2333,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 64.77) (xy 90.17 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8995097-ebe0-4aa3-a02a-6c2aa0ae3cbf")
+	)
+	(wire
+		(pts
 			(xy 60.96 71.12) (xy 62.23 71.12)
 		)
 		(stroke
@@ -2230,6 +2413,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 64.77) (xy 100.33 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c029dcb2-7e06-4ec6-bcbd-8170e4270969")
+	)
+	(wire
+		(pts
 			(xy 100.33 64.77) (xy 100.33 62.23)
 		)
 		(stroke
@@ -2297,16 +2490,6 @@
 			(type default)
 		)
 		(uuid "dfaf117a-e697-4c7b-8cf7-0f61cb9813aa")
-	)
-	(wire
-		(pts
-			(xy 87.63 74.93) (xy 100.33 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e093e804-2840-4842-8fbd-188d242b80d1")
 	)
 	(wire
 		(pts
@@ -2927,12 +3110,12 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 49.53 38.1 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3565179c-c769-46b7-a983-9d097ab96005")
 		(property "Reference" "RV1"
 			(at 46.99 36.8299 0)
@@ -3631,12 +3814,12 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 49.53 87.63 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7e058c3f-e95d-43bf-913e-adea4c04cf9b")
 		(property "Reference" "RV4"
 			(at 46.99 86.3599 0)
@@ -3840,8 +4023,181 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 93.98 64.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8709ee4d-8119-450e-9ae0-291b584f0d77")
+		(property "Reference" "D1"
+			(at 93.98 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5817"
+			(at 93.98 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 93.98 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2549b6cf-c25d-40fb-81e6-d5b3251bcbc2")
+		)
+		(pin "1"
+			(uuid "5680618d-0614-419a-b52a-f8364412c87c")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 93.98 74.93 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c8c1cac-4937-4dfc-9c11-446157ef9469")
+		(property "Reference" "D2"
+			(at 93.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5817"
+			(at 93.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 93.98 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 93.98 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 93.98 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 93.98 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9a2e05da-3b33-4628-a6ff-56eb7ee35d24")
+		)
+		(pin "1"
+			(uuid "220f88ad-a6ec-4f03-aa57-9077c6aa71d0")
+		)
+		(instances
+			(project "HagiwoEurorackMixer"
+				(path "/56bf8528-2dcc-4e9e-a6bb-ed2d17ee9d21"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer")
-		(at 91.44 30.48 90)
+		(at 91.44 30.48 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4594,12 +4950,12 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 49.53 54.61 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ee1affdb-a8be-4ae6-b272-241e23bb51e3")
 		(property "Reference" "RV2"
 			(at 46.99 53.3399 0)
@@ -4821,12 +5177,12 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 49.53 71.12 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fed68e32-41c6-4be5-ad14-f665515cc354")
 		(property "Reference" "RV3"
 			(at 46.99 69.8499 0)
